@@ -1,0 +1,22 @@
+{
+  "_说明": "复制本文件为 config.local.json 后填写。config.local.json 已被 .gitignore 排除，不会入库。留空 baseUrl 即进入演示模式（本地假平台，不连任何真实服务）。",
+  "baseUrl": "",
+  "signSecret": "",
+  "port": 8787,
+  "host": "127.0.0.1",
+  "demoPort": 8788,
+  "stateFile": "state.json",
+  "schoolLat": "",
+  "schoolLng": "",
+  "_track说明": "轨迹拟真参数，全部可省略（省缺即用内置默认档）。只放需要按硬件标定的量：不同手机 GPS 精度不同，不同操场半径也不同。seed 设值则完全可复现，仅供测试。",
+  "track": {
+    "gpsSigmaM": 3,
+    "gpsPhi": 0.75,
+    "speedCv": 0.05,
+    "speedPhi": 0.7,
+    "dtJitterSec": 0.5,
+    "accuracyMedianM": 8,
+    "accuracyPhi": 0.8,
+    "seed": null
+  }
+}

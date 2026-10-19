@@ -1,0 +1,54 @@
+# 依赖
+node_modules/
+
+# ★ 凭据：state.json 含真实姓名/学号/token/device-id；只保留模板
+state*.json
+!state.example.json
+*.bak.json
+*.corrupt-*
+*.tmp
+
+# ★ 本地真实配置
+config.local.json
+config.seed.json
+config.*.local.json
+schools.json
+state.json.bak
+.env
+.env.*
+*.pem
+*.key
+
+# 抓包与小程序包
+*.har
+*.jsonl
+*.pcap
+*.wxapkg
+*.db
+*.sqlite*
+*.zip
+*.7z
+*.rar
+
+# 运行产物
+output/
+tools/qa/output/
+tools/qa/*-results.json
+tools/qa/*.txt
+tools/qa/*.log
+tools/qa/static-checks.json
+
+# 截图与录屏最容易被顺手提交
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.mp4
+
+# 系统与本机编辑器状态
+.claude/
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

@@ -1,0 +1,1318 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f6f8fa">
+<title>校园跑 · 让每一步更从容</title>
+<link rel="icon" href="data:,">
+<style>
+:root{color-scheme:light;--page:#f6f8fa;--ink:#172332;--muted:#5f6e7d;--subtle:#738292;--line:#e5eaf0;--blue:#1769e8;--blue-soft:#edf4ff;--green:#267565;--green-soft:#eaf5f0;--amber:#8b611b;--amber-soft:#fff7e8;--red:#b34348;--red-soft:#fff0f0;--shadow:0 3px 5px #1b2e4605,0 14px 40px #1b2e460a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;font-synthesis:none}
+*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;min-width:320px;background:var(--page);color:var(--ink);font-size:14px;line-height:1.65;-webkit-font-smoothing:antialiased}body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 16% 15%,#e0eafe99,transparent 43%),radial-gradient(ellipse at 89% 46%,#dcf0e966,transparent 42%),linear-gradient(140deg,#faf9f6,#f4f7fb 55%,#f7faf8)}
+button,input,textarea,select{font:inherit}button,a,input,textarea,summary{-webkit-tap-highlight-color:transparent}button{cursor:pointer;transition:background 180ms,color 180ms,border-color 180ms,box-shadow 180ms,transform 180ms cubic-bezier(.2,.8,.2,1.25)}button:active:not(:disabled){transform:scale(.98)}button:disabled{cursor:not-allowed;opacity:.45}:focus-visible{outline:3px solid #89b9ff;outline-offset:3px}a{color:var(--blue);text-decoration:none}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.35;letter-spacing:-.035em}h1{font-size:clamp(30px,3.3vw,44px);font-weight:650}h2{font-size:18px;font-weight:650}h3{font-size:14px;font-weight:650}svg{display:inline-block;vertical-align:middle;flex-shrink:0}.icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.icon-sm{width:16px;height:16px}
+.shell{width:min(1280px,calc(100% - 80px));margin-inline:auto}.site-header{padding-top:24px}.header-inner{height:72px;border:1px solid #ffffffd9;border-radius:20px;padding:0 25px;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#ffffffed;box-shadow:inset 0 1px 0 #fffffff2,0 8px 30px #2036500d}@supports(backdrop-filter:blur(1px)){.glass,.header-inner{background:#ffffffbf;backdrop-filter:blur(22px) saturate(135%);-webkit-backdrop-filter:blur(22px) saturate(135%)}}
+.brand{display:inline-flex;gap:11px;align-items:center;color:var(--ink)}.brand-mark{width:37px;height:37px;color:var(--blue)}.brand-name{font-size:22px;font-weight:750;letter-spacing:-.06em;line-height:1}.brand-divider{height:20px;width:1px;background:#d8dfe8;margin-inline:5px}.brand-description{color:var(--muted);font-size:12px;letter-spacing:.09em}.header-actions{display:flex;align-items:center;gap:15px}.demo-badge{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid #d6e3f8;border-radius:99px;font-size:11px;font-weight:600;color:#40638e;white-space:nowrap;background:#eff5fc}.demo-badge::before{content:"";width:5px;height:5px;border-radius:50%;background:#5689c6}.header-caption{font-size:12px;color:var(--muted)}
+.button{min-height:46px;border:1px solid transparent;border-radius:12px;padding:10px 17px;display:inline-flex;justify-content:center;align-items:center;gap:8px;font-weight:600;line-height:1.5}.button-primary{background:var(--blue);color:white;box-shadow:0 4px 10px #1769e81a,inset 0 1px 0 #ffffff20}.button-primary:hover:not(:disabled){background:#1155bf;box-shadow:0 5px 14px #1769e82b}.button-secondary{border-color:#dce4ed;background:#fff;color:#42566d}.button-secondary:hover:not(:disabled){border-color:#c1d3eb;background:#f5f8fd}.button-soft{color:var(--blue);background:var(--blue-soft)}.button-soft:hover:not(:disabled){background:#e2eeff}.button-ghost{background:transparent;color:var(--muted);padding-inline:11px}.button-ghost:hover:not(:disabled){background:#edf2f7;color:var(--ink)}.button-danger{background:var(--red);color:white}.button-small{min-height:44px;font-size:12px;padding:9px 12px}.button-wide{width:100%}
+.card{border:1px solid #e5eaf0e6;border-radius:20px;background:#ffffffed;box-shadow:var(--shadow)}.card-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:23px}.eyebrow{color:var(--subtle);font-size:10px;font-weight:650;letter-spacing:.16em;text-transform:uppercase}.section-subtitle{color:var(--muted);font-size:12px;margin-top:5px}.muted{color:var(--muted)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.screen{animation:screen-in 240ms ease-out both}@keyframes screen-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.bind-hero{text-align:center;padding:65px 20px 34px}.bind-hero .eyebrow{color:#6583a4;margin-bottom:15px}.bind-hero h1 span{color:var(--blue)}.bind-hero>p:last-child{color:var(--muted);margin:15px auto 0;max-width:440px;font-size:14px}.bind-layout{max-width:960px;display:grid;grid-template-columns:.85fr 1.15fr;gap:22px;margin:0 auto}.intro-card{padding:30px;background:linear-gradient(150deg,#f8fbff,#f2f7ff 65%,#f4faf7);display:flex;flex-direction:column}.step-kicker{display:flex;align-items:center;gap:10px;margin-bottom:22px;color:#547292;font-size:11px;font-weight:600;letter-spacing:.04em}.step-number{width:25px;height:25px;border-radius:50%;border:1px solid #cfddee;display:grid;place-items:center;font-size:11px;color:#587ba4;background:#ffffff99}.intro-card h2{font-size:22px}.intro-card>p{color:#5d7188;margin-top:12px;font-size:13px;line-height:1.85}.orbit-art{width:100%;max-width:260px;height:150px;margin:15px auto 5px;color:#6c9bd9}.intro-list{list-style:none;padding:0;margin:15px 0 23px;display:grid;gap:14px}.intro-list li{display:flex;align-items:flex-start;gap:10px;color:#526a84;font-size:12px}.intro-list .icon{color:#6f93c1;margin-top:1px;width:17px;height:17px}.intro-bottom{margin-top:auto}.download-details{margin-top:18px;border-top:1px solid #dbe6f2;padding-top:12px}
+summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:8px;list-style:none;font-size:12px;color:var(--muted)}summary::-webkit-details-marker{display:none}summary .chevron{margin-left:auto;transition:transform 180ms}details[open]>summary .chevron{transform:rotate(180deg)}.download-actions{display:flex;flex-wrap:wrap;gap:8px;padding-top:4px}.download-note{margin-top:10px;color:#647992;font-size:11px}.bind-card{padding:30px}.bind-card h2{font-size:22px;margin-bottom:5px}.field{margin-top:22px}.field-label{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px;font-size:12px;font-weight:600;color:#425267}.field-help{font-size:11px;font-weight:400;color:var(--muted)}
+input:not([type=radio]):not([type=checkbox]):not([type=hidden]),textarea,select{width:100%;min-height:46px;color:var(--ink);border:1px solid #dce4ee;border-radius:12px;background:#f8fafc;padding:11px 13px;transition:border-color 180ms,box-shadow 180ms}input:hover,textarea:hover,select:hover{border-color:#c2d0e2}input:focus,textarea:focus,select:focus{border-color:#6a9de6;background:#fff;outline:none;box-shadow:0 0 0 3px #1769e814}textarea{resize:vertical;min-height:94px;font-size:13px;line-height:1.7}textarea::placeholder{color:#7c8a9a}input[aria-invalid=true],textarea[aria-invalid=true]{border-color:var(--red)}.code-action{width:100%;margin-top:8px;justify-content:flex-start;font-weight:500}fieldset{border:0;padding:0;min-width:0;margin:0}
+.segment{--segment-index:0;position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:4px;border:1px solid #e1e7ee;background:#f0f3f7;border-radius:13px;padding:4px;isolation:isolate}.segment::before{content:"";position:absolute;z-index:-1;top:4px;bottom:4px;left:4px;width:calc(50% - 6px);border-radius:9px;background:white;border:1px solid #e2e8ef;box-shadow:0 2px 5px #263b5110;transform:translateX(calc(var(--segment-index) * (100% + 4px)));transition:transform 240ms cubic-bezier(.2,.8,.2,1.1)}.segment[data-active="1"]{--segment-index:1}.segment-label{position:relative;display:flex;gap:6px;justify-content:center;align-items:center;min-height:44px;border-radius:9px;color:#69788a;cursor:pointer;font-size:12px;font-weight:600}.segment-label input{position:absolute;inset:0;opacity:0;cursor:pointer;margin:0}.segment-label:has(input:checked){color:var(--blue)}.segment-label:has(input:focus-visible){outline:3px solid #89b9ff;outline-offset:2px}.segment:has(.segment-label:nth-child(2) input:checked){--segment-index:1}.segment-detail{font-size:11px;font-weight:400}
+.form-message{font-size:12px;line-height:1.7;border-radius:10px;padding:10px 12px;margin-top:14px;background:var(--blue-soft);color:#315b91}.form-message[data-tone=error],.form-message.error{background:var(--red-soft);color:var(--red)}.form-message[data-tone=success],.form-message.success{background:var(--green-soft);color:var(--green)}.bind-submit{margin-top:24px}.privacy-note{display:flex;justify-content:center;gap:6px;color:var(--subtle);font-size:11px;margin-top:14px}.bind-caption{max-width:960px;margin:22px auto 0;text-align:center;color:var(--subtle);font-size:11px}
+.dashboard-top{display:flex;justify-content:space-between;align-items:flex-end;gap:25px;padding:43px 0 26px}.dashboard-top .eyebrow{margin-bottom:8px}.dashboard-top h1{font-size:31px}.dashboard-top h1 span{font-weight:400;color:#738293}.dashboard-top .section-subtitle{margin-top:8px;font-size:13px}.clock{text-align:right;color:var(--muted);font-size:11px;padding-bottom:4px}.clock time{display:block;color:#42566d;font-size:14px;font-variant-numeric:tabular-nums;margin-top:3px}.dashboard-grid{display:grid;grid-template-columns:340px minmax(0,1fr);gap:22px;align-items:start}
+.account-card{grid-column:1;grid-row:1 / 3;overflow:hidden}.account-main{padding:27px}.account-top{display:flex;justify-content:space-between;align-items:center}.account-avatar{width:43px;height:43px;display:grid;place-items:center;border-radius:50%;background:#edf3fb;color:#5984b5}.account-top .tag{background:#f4f6f9;color:#60758b;font-size:10px;padding:4px 8px;border-radius:6px}.account-name{margin-top:17px;font-size:21px;font-weight:650;letter-spacing:-.03em}.account-school{color:var(--muted);font-size:12px;margin-top:3px}.account-meta{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:12px;color:var(--muted);font-size:11px}.account-meta .dot{width:3px;height:3px;background:#bac6d3;border-radius:50%}.account-details{margin-top:13px;border-top:1px solid var(--line)}.account-details dl{margin:0;display:grid;grid-template-columns:60px 1fr;gap:7px;padding:0 0 8px;font-size:11px}.account-details dt{color:var(--muted)}.account-details dd{margin:0;text-align:right;overflow-wrap:anywhere}
+.quota-block{padding:24px 27px;border-top:1px solid #e8edf4;background:linear-gradient(135deg,#f8fbff,#f1f6fd)}.quota-label{color:#59718d;font-size:11px}.quota-number{display:flex;align-items:baseline;gap:8px;margin-top:4px}.quota-number strong{font-size:55px;font-weight:550;letter-spacing:-.07em;line-height:1.2;color:#234b7f;font-variant-numeric:tabular-nums}.quota-number span{color:#698099;font-size:12px}.quota-meta{display:flex;gap:16px;font-size:11px;color:#60778f;margin-top:10px}.quota-note{font-size:11px;color:#6b7e92;margin-top:14px}.quota-block .button{margin-top:19px}.account-footer{display:flex;align-items:center;justify-content:space-between;padding:12px 17px;border-top:1px solid var(--line)}
+.current-card{grid-column:2;grid-row:1;padding:25px 27px}.current-card .card-heading{margin-bottom:17px}.section-icon{width:34px;height:34px;background:#f2f6fc;color:#6989b3;display:grid;place-items:center;border-radius:10px}.empty-state{display:flex;align-items:center;gap:16px;padding:19px 20px;border:1px dashed #dce5ef;border-radius:13px;background:#fafcfe}.empty-icon{color:#91a6bf;width:33px;height:33px}.empty-state strong{font-size:13px;font-weight:550}.empty-state p{color:var(--muted);font-size:11px;margin-top:3px}.run-card{grid-column:2;grid-row:2;padding:27px}.run-card .card-heading{margin-bottom:20px}.run-mode{max-width:350px;margin-bottom:21px}
+.route-choice{display:flex;align-items:center;gap:15px;padding:16px;background:#f7faff;border:1px solid #d6e3f4;border-radius:13px}.route-map{color:#7295c4;background:#eaf1fb;border-radius:10px;width:49px;height:49px;padding:8px}.route-choice h3{font-size:13px}.route-choice p{font-size:11px;color:#6e829b;margin-top:3px}.route-distance{margin-left:auto;font-size:19px;letter-spacing:-.03em;font-weight:600;color:#3b659a;white-space:nowrap}.route-distance small{font-size:10px;font-weight:400;margin-left:3px}.run-note{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:7px;margin-top:14px}.submit-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:17px;margin-top:19px;border-top:1px solid var(--line)}.submit-row p{color:var(--muted);font-size:11px;max-width:270px}.submit-row .button{min-width:162px}
+.queue-card,.records-card,.phone-card,.console-card{grid-column:1 / -1;padding:26px 27px}.queue-card{grid-row:3}.records-card{grid-row:4}.phone-card{grid-row:5}.console-card{grid-row:6}.count-badge{display:inline-flex;align-items:center;justify-content:center;min-width:21px;height:21px;font-size:10px;font-weight:550;color:var(--muted);background:#f0f4f8;border:1px solid #e6ebf1;border-radius:7px;margin-left:7px;vertical-align:2px}
+.status{display:inline-flex;justify-content:center;align-items:center;gap:5px;padding:4px 9px;font-size:10px;line-height:1.5;border-radius:7px;color:#5c6e81;background:#f0f3f7;white-space:nowrap}.status::before{content:"";width:4px;height:4px;border-radius:50%;background:currentColor}.status[data-status=running],.status[data-status=ready]{color:#3268ae;background:#edf4ff}.status[data-status=success]{color:var(--green);background:var(--green-soft)}.status[data-status=failed],.status[data-status=error]{color:var(--red);background:var(--red-soft)}.status[data-status=waiting],.status[data-status=scheduled]{color:var(--amber);background:var(--amber-soft)}
+/* 平台 status:2 = 无效（app-service.js:1882 三态 0/1/2），与「失败」不是一回事 */
+.status[data-status=invalid]{color:var(--amber);background:var(--amber-soft)}
+.quota-free{font-size:11px;color:#6b7e92;margin-top:6px}
+.quota-free b{color:#3268ae}
+.route-mode-field{margin-bottom:14px}
+.window-switch{margin-top:10px}
+.queue-list{display:grid;gap:10px}.task-item{display:flex;align-items:center;gap:18px;padding:17px 18px;border:1px solid var(--line);border-radius:13px;background:#fbfcfe}.task-time{font-size:20px;font-weight:550;letter-spacing:-.035em;line-height:1.3;font-variant-numeric:tabular-nums;min-width:73px}.task-time small{display:block;color:var(--muted);font-size:10px;letter-spacing:0;font-weight:400;margin-top:4px}.task-info{flex:1;min-width:0}.task-info h3{font-size:12px}.task-meta{display:flex;flex-wrap:wrap;gap:6px 13px;color:var(--muted);font-size:11px;margin-top:5px}.task-actions{display:flex;align-items:center;gap:12px}.task-progress{position:relative;height:8px;border-radius:99px;background:#e7edf5;margin-top:12px;overflow:hidden}.task-progress>span{position:relative;display:block;height:100%;width:0;background:#77a2df;border-radius:99px;transition:width 240ms}.task-progress>span::after{content:"";position:absolute;top:50%;right:3px;width:4px;height:4px;margin-top:-2px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px rgba(50,104,174,.25)}.task-progress[data-live="1"]>span::after{animation:dot-pulse 1.6s ease-in-out infinite}.progress-meta{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:11px;color:var(--muted)}.progress-meta .icon{width:12px;height:12px;margin:0;color:#6f93c1;flex:none}.progress-meta b{color:#3268ae;font-weight:550;font-variant-numeric:tabular-nums}.progress-replay{margin-left:auto;font-size:10px;color:var(--muted);letter-spacing:.02em;white-space:nowrap}.current-task-active{border:1px solid #d9e5f7;background:#f7faff;border-radius:13px;padding:18px}.current-task-active .task-item{padding:0;border:0;background:transparent}.queue-empty{min-height:93px}
+.records-header{display:grid;grid-template-columns:1.2fr 1.4fr .85fr .85fr .75fr .8fr;gap:12px;color:var(--subtle);font-size:10px;padding:0 16px 12px;border-bottom:1px solid var(--line)}.record-item{display:grid;grid-template-columns:1.2fr 1.4fr .85fr .85fr .75fr .8fr;align-items:center;gap:12px;padding:17px 16px;border-bottom:1px solid #edf0f4;font-size:12px}.record-item:last-child{border-bottom:0}.record-id{font-size:11px;color:#718299}.record-date{font-size:11px;color:#52667e}.record-stat{font-weight:550;font-variant-numeric:tabular-nums;color:#3a516b}.record-mobile-label{display:none}.records-footnote{color:var(--subtle);font-size:10px;padding-top:15px;border-top:1px solid var(--line)}
+.phone-card{display:flex;align-items:center;gap:22px;background:linear-gradient(105deg,#ffffffed,#f9fcff)}.phone-art{width:57px;height:67px;color:#7995b6;background:#eff5fc;border-radius:14px;padding:15px}.phone-copy{flex:1}.phone-copy p{color:var(--muted);font-size:12px;margin-top:6px}.phone-copy small{display:block;color:#7a8999;font-size:10px;margin-top:5px}.copy-fallback{flex-basis:100%}.phone-card:has(.copy-fallback:not([hidden])){flex-wrap:wrap}.stepper{display:flex;align-items:center;gap:6px}.stepper input{flex:1;min-width:0}.stepper .button{padding:6px 9px;font-size:11px;flex:none;font-variant-numeric:tabular-nums;min-width:44px}
+@media(max-width:767px){.stepper{gap:5px}.stepper .button[data-delta="-1"],.stepper .button[data-delta="1"]{display:none}}.console-card{padding-block:9px;background:#f9fbfdd9;border-style:dashed;box-shadow:none}.console-card>summary{min-height:62px}.console-heading{display:flex;flex:1;gap:11px;align-items:center}.console-heading strong{color:#536b84;font-size:12px;font-weight:550}.console-heading span{color:#7e8fa2;font-size:10px;margin-left:7px}.console-content{border-top:1px solid var(--line);padding:20px 0 15px}.console-note{font-size:11px;color:var(--muted);max-width:660px}.console-context{display:flex;justify-content:space-between;gap:22px;margin:17px 0;padding:14px 16px;border-radius:11px;background:#f0f4f8;font-size:11px;color:#61788f}.console-context strong{display:block;color:#3f5873;font-size:12px;font-weight:550;margin-top:3px}.console-controls{display:flex;flex-wrap:wrap;gap:8px}.console-controls .button{font-weight:500}.console-reset{margin-left:auto}
+.site-footer{display:flex;justify-content:space-between;gap:20px;align-items:center;padding-block:30px 34px;font-size:10px;color:#7a8999}.footer-brand{color:#667b92;letter-spacing:.04em}.footer-dot{margin-inline:8px;color:#b6c2cf}.toast{position:fixed;z-index:20;left:50%;bottom:27px;transform:translateX(-50%);display:flex;align-items:center;gap:9px;width:max-content;max-width:calc(100% - 32px);border:1px solid #e3eaf3;border-radius:14px;background:#ffffffed;box-shadow:0 9px 35px #20364f21;padding:14px 20px;color:#3c5876;font-size:12px}.toast:not([hidden]){animation:toast-in 240ms}@keyframes toast-in{from{opacity:0;translate:0 8px}to{opacity:1;translate:0 0}}@keyframes dot-pulse{0%,100%{opacity:.45}50%{opacity:1}}
+dialog{color:var(--ink);width:min(440px,calc(100% - 32px));border:1px solid #ffffffeb;border-radius:24px;padding:30px;background:#fffffffa;box-shadow:0 25px 90px #2539522b}dialog[open]{animation:screen-in 240ms}dialog::backdrop{background:#26364c35;backdrop-filter:blur(5px)}.dialog-symbol{display:grid;place-items:center;width:45px;height:45px;border-radius:14px;background:var(--blue-soft);color:#5681b9;margin-bottom:20px}.dialog-symbol.danger{color:var(--red);background:var(--red-soft)}dialog h2{font-size:21px}dialog p{color:var(--muted);font-size:13px;line-height:1.9;margin-top:11px}.dialog-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:25px}.dialog-caption{font-size:11px;color:var(--subtle);margin-top:12px}
+@media(min-width:1400px){.bind-hero{padding-top:80px}}
+@media(max-width:1099px){.shell{width:calc(100% - 48px)}.dashboard-grid{grid-template-columns:290px minmax(0,1fr);gap:18px}.account-main,.quota-block,.current-card,.run-card{padding:23px}.route-choice{gap:11px}.route-distance{font-size:17px}.submit-row{align-items:stretch;flex-direction:column;gap:12px}.submit-row p{max-width:none}}
+@media(max-width:767px){.shell{width:calc(100% - 32px)}.site-header{padding-top:14px}.header-inner{height:64px;padding-inline:17px;border-radius:17px;gap:10px}.brand-mark{width:30px;height:30px}.brand-name{font-size:20px}.brand-divider,.brand-description,.header-caption{display:none}.header-actions{gap:8px}.demo-badge{padding:4px 8px;font-size:10px}.header-actions .button{font-size:11px;padding-inline:7px}.bind-hero{padding:43px 4px 28px}.bind-hero h1{font-size:31px}.bind-hero>p:last-child{font-size:12px;max-width:290px}.bind-layout{grid-template-columns:1fr;gap:16px;max-width:500px}.intro-card,.bind-card{padding:24px}.intro-card h2,.bind-card h2{font-size:20px}.orbit-art{display:none}.intro-list{margin:20px 0;gap:12px}.step-kicker{margin-bottom:17px}.bind-caption{max-width:300px;line-height:1.8}.dashboard-top{padding:31px 2px 23px;align-items:flex-start}.dashboard-top h1{font-size:27px}.dashboard-top .section-subtitle{font-size:11px;max-width:230px}.clock{display:none}.dashboard-grid{grid-template-columns:minmax(0,1fr);gap:16px}.account-card,.current-card,.run-card,.queue-card,.records-card,.phone-card,.console-card{grid-column:1;grid-row:auto}.account-card{display:grid;grid-template-columns:1fr 1fr}.account-main{padding:21px}.account-avatar{width:35px;height:35px}.account-name{font-size:19px;margin-top:12px}.account-school{font-size:10px}.account-meta{font-size:10px;gap:5px;margin-top:9px}.account-top .tag{display:none}.quota-block{border-top:0;border-left:1px solid #e8edf4;padding:21px}.quota-number strong{font-size:43px}.quota-meta{font-size:9px;gap:9px}.quota-note{display:none}.quota-block .button{margin-top:12px;min-height:44px;font-size:11px;padding:8px}.account-footer{grid-column:1 / -1;padding:5px 12px}.account-details dl{grid-template-columns:1fr}.account-details dd{text-align:left}.current-card,.run-card,.queue-card,.records-card,.phone-card{padding:22px}h2{font-size:17px}.card-heading{margin-bottom:19px}.run-mode{max-width:none}.route-choice{padding:13px;gap:11px}.route-map{width:43px;height:43px}.route-choice h3{font-size:12px}.route-choice p{font-size:10px}.route-distance{font-size:17px}.field-label{font-size:11px}.submit-row{flex-direction:column-reverse;gap:12px}.submit-row p{text-align:center;font-size:10px}.submit-row .button{width:100%}.empty-state{padding:16px;gap:12px}.empty-icon{width:27px;height:27px}.empty-state strong{font-size:12px}.empty-state p{font-size:10px}.task-item{flex-wrap:wrap;padding:15px;gap:12px}.task-time{min-width:61px;font-size:18px}.task-meta{font-size:10px;gap:4px 9px}.task-actions{width:100%;justify-content:space-between;border-top:1px solid var(--line);padding-top:10px}.current-task-active .task-actions{width:auto;margin-left:auto;border:0;padding:0}.records-header{display:none}.records-list{display:grid;gap:12px}.record-item{grid-template-columns:repeat(3,1fr);padding:16px;border:1px solid var(--line);border-radius:12px;gap:16px 10px}.record-item:last-child{border-bottom:1px solid var(--line)}.record-id{grid-column:1;font-size:10px}.record-date{grid-column:2 / 4;text-align:right;font-size:10px}.record-item>:last-child{grid-column:1 / -1}.record-mobile-label{display:block;font-size:9px;color:var(--subtle);font-weight:400;margin-bottom:3px}.record-stat{font-size:13px}.records-footnote{font-size:9px;margin-top:16px}.phone-card{flex-wrap:wrap;gap:14px}.phone-art{width:46px;height:55px;padding:11px;border-radius:11px}.phone-copy{min-width:170px}.phone-copy p{font-size:11px}.phone-copy small{font-size:9px}.phone-card>.button{width:100%}.console-card{padding-inline:20px}.console-heading span{display:block;margin:3px 0 0;font-size:9px}.console-context{flex-direction:column;gap:13px}.console-controls{display:grid;grid-template-columns:1fr 1fr}.console-controls .button{font-size:10px;padding-inline:8px}.console-reset{margin-left:0;grid-column:1 / -1}.site-footer{padding-block:25px 30px;flex-direction:column;gap:5px;font-size:9px;text-align:center}dialog{padding:25px}.toast{bottom:max(20px,env(safe-area-inset-bottom))}}
+@media(max-width:374px){.account-main,.quota-block{padding:17px}.current-card,.run-card,.queue-card,.records-card{padding:18px}.route-map{display:none}.quota-meta{flex-direction:column;gap:3px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}button:active:not(:disabled){transform:none}dialog::backdrop{backdrop-filter:none}}
+/* Small text remains readable on both the white surfaces and the page background. */
+:root{--subtle:#5f6e7d}
+.bind-hero .eyebrow,.step-number,.intro-card>p,.download-note,.segment-label,.account-top .tag,.quota-label,.quota-number span,.quota-meta,.quota-note,.route-choice p,.record-id,.phone-copy small,.console-heading span,.console-context,.site-footer,.footer-brand{color:var(--muted)}
+textarea::placeholder{color:var(--muted)}
+.brand{min-height:44px}
+.toast[data-error="true"]{color:var(--red);background:var(--red-soft);border-color:#e8c7cb}
+@media(max-width:767px){
+  .records-card .card-heading>.button{min-width:44px;width:44px;height:44px;padding:0;gap:0;font-size:0;flex-shrink:0}
+  .quota-meta,.record-mobile-label,.records-footnote,.phone-copy small,.console-heading span{font-size:11px}
+}
+.run-note[data-tone=error]{color:var(--red)}
+.run-note[data-tone=success]{color:var(--green)}
+.console-track{margin:14px 0 0;padding:14px 16px;border-radius:11px;background:#f7fafc;border:1px solid var(--line)}
+.console-track svg{display:block;width:100%;max-width:280px;height:auto;margin:0 auto;aspect-ratio:1}
+.console-raw{margin:14px 0 0;padding:12px 14px;border-radius:11px;background:#f0f4f8;font-size:11px;line-height:1.5;max-height:260px;overflow:auto;white-space:pre-wrap;word-break:break-all;color:#41566d}
+.demo-banner{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px auto 0;padding:10px 16px;border:1px solid #f0d9a8;border-radius:12px;background:#fff8e6;color:#7a5a12;font-size:13px}
+.demo-banner strong{font-weight:700}
+.demo-banner a{color:#7a5a12;text-decoration:underline}
+.demo-banner[hidden]{display:none}
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v4m8-4v4M4 10h16m-11 4h1m4 0h1m-6 3h1"/></symbol><symbol id="i-route" viewBox="0 0 24 24"><path d="M7 18h9a4 4 0 0 0 0-8H8a3 3 0 0 1 0-6h8"/><circle cx="6" cy="18" r="2"/><path d="m13 1 3 3-3 3"/></symbol><symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v5c0 5-5 8-8 10-3-2-8-5-8-10V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol><symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 16v4h16v-4"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 5h4m-3 14h2"/></symbol><symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol><symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h7m4 0h5M4 12h3m4 0h9M4 18h11m4 0h1"/><circle cx="13" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></symbol><symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.1"/></symbol><symbol id="i-bolt" viewBox="0 0 24 24"><path d="m14 2-9 12h6l-1 8 9-12h-6l1-8Z"/></symbol><symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7V5Z"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol><symbol id="i-logout" viewBox="0 0 24 24"><path d="M10 4H5v16h5m5-12 4 4-4 4M9 12h10"/></symbol>
+</svg>
+<header class="site-header shell"><div class="header-inner glass"><a class="brand" href="#" aria-label="校园跑首页"><svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M15 6h10a14 14 0 0 1 0 28H15a14 14 0 0 1 0-28Z" stroke="currentColor" stroke-width="2"/><path d="M15 12h10a8 8 0 0 1 0 16H15a8 8 0 0 1 0-16Z" stroke="currentColor" stroke-width="2"/><path d="m17 24 7-8m-8 0h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">校园跑</span><span class="brand-divider"></span><span class="brand-description">MOVE WITH EASE</span></a><div class="header-actions"><span class="header-caption">每一步，都有安排。</span><span class="demo-badge" id="mode-badge">未连接</span><span class="demo-badge" id="backend-badge" hidden></span><button id="header-user" class="button button-ghost button-small" type="button" hidden><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-user"/></svg><span id="header-user-name">—</span></button></div></div></header>
+<div id="demo-banner" class="demo-banner" hidden role="status">
+  <strong>演示模式</strong>
+  <span>未配置真实平台，所有数据只留在本机，不会提交到任何平台。</span>
+  <a href="docs/接入新学校.md">如何接入真实平台</a>
+</div>
+<main class="shell">
+<section id="bind-screen" class="screen" aria-labelledby="bind-title">
+<div class="bind-hero"><p class="eyebrow">A LITTLE LESS HASSLE. A LITTLE MORE FLOW.</p><h1 id="bind-title">让每一步，<span>更从容。</span></h1><p>从连接你的校园身份开始，<br>把运动安排、任务进度和每次记录，轻松放在一处。</p></div>
+<div class="bind-layout">
+<section class="card intro-card" aria-labelledby="intro-title"><div class="step-kicker"><span class="step-number">01</span> 了解如何连接</div><h2 id="intro-title">简单连接，<br>清晰掌握。</h2><p>绑定码由「取码工具」工具从微信中读取，是一段 Base64 文本。把它粘贴到右侧即可连接你的校园身份。</p>
+<svg class="orbit-art" viewBox="0 0 260 150" fill="none" aria-hidden="true"><ellipse cx="130" cy="78" rx="112" ry="43" stroke="#d9e5f5"/><ellipse cx="130" cy="78" rx="81" ry="31" stroke="#c6d8ef"/><path d="M36 101c26 27 123 35 184-13" stroke="#80a7da" stroke-width="2" stroke-linecap="round"/><circle cx="218" cy="89" r="5" fill="#86a9d6" stroke="#f4f8fe" stroke-width="4"/><rect x="102" y="23" width="55" height="87" rx="14" fill="white" stroke="#c4d6ec"/><path d="M122 31h15" stroke="#ccdaec" stroke-width="3" stroke-linecap="round"/><circle cx="130" cy="62" r="12" fill="#eef4fc"/><path d="m125 63 4 4 7-9" stroke="#6a92c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M115 87h30m-24 7h18" stroke="#dae5f2" stroke-width="3" stroke-linecap="round"/></svg>
+<ul class="intro-list"><li><svg aria-hidden="true" focusable="false" class="icon"><use href="#i-user"/></svg><span>连接身份，读取真实档案与平台开跑规则</span></li><li><svg aria-hidden="true" focusable="false" class="icon"><use href="#i-calendar"/></svg><span>立即提交，或预约到开跑窗口自动执行</span></li><li><svg aria-hidden="true" focusable="false" class="icon"><use href="#i-shield"/></svg><span>凭据只保存在本机服务器，页面不接触 token</span></li></ul>
+<div class="intro-bottom"><button id="how-to-bind" class="button button-secondary button-wide" type="button">绑定码从哪里来？<svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-arrow"/></svg></button><details class="download-details"><summary><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-download"/></svg>了解运行方式<svg aria-hidden="true" focusable="false" class="icon icon-sm chevron"><use href="#i-chevron"/></svg></summary><div class="download-actions"><button class="button button-secondary button-small" type="button" data-info="local-server">本机运行</button><button class="button button-secondary button-small" type="button" data-info="platform-rules">平台规则</button></div><p class="download-note">本页由本机 node server.js 提供，只监听 127.0.0.1。</p></details></div></section>
+<section class="card bind-card" aria-labelledby="connect-title"><div class="step-kicker"><span class="step-number">02</span> 连接你的身份</div><h2 id="connect-title">准备好，就出发。</h2><p class="section-subtitle">粘贴绑定码，连接你的校园身份。</p><form id="bind-form" novalidate><div class="field"><label class="field-label" for="bind-code">绑定码<span class="field-help">Base64 文本</span></label><textarea id="bind-code" name="code" placeholder="粘贴「取码工具」输出的绑定码…" spellcheck="false" autocomplete="off" aria-describedby="bind-code-help"></textarea><p id="bind-code-help" class="sr-only">粘贴由取码工具工具从微信中读取的 Base64 绑定码。</p><button id="paste-hint" class="button button-ghost button-small code-action" type="button"><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-bolt"/></svg>从剪贴板粘贴</button></div>
+<button id="bind-scan" class="button button-secondary button-wide" type="button"><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-bolt"/></svg>一键读取微信信息</button>
+<p id="scan-progress" class="section-subtitle" role="status" aria-live="polite" hidden></p>
+<p id="bind-message" class="form-message" role="status" aria-live="polite" hidden></p><button id="bind-submit" class="button button-primary button-wide bind-submit" type="submit">连接身份<svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-arrow"/></svg></button><p class="privacy-note"><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-shield"/></svg>凭据保存在本机服务器，页面仅收到脱敏后的档案</p></form></section>
+</div><p class="bind-caption">绑定成功后，本页会调用本机服务器并直连校园平台。开跑窗口以平台实时返回为准。</p></section>
+<section id="dashboard-screen" class="screen" aria-labelledby="dashboard-title" hidden>
+<div class="dashboard-top"><div><p class="eyebrow">YOUR MOVEMENT, IN VIEW</p><h1 id="dashboard-title">你好，<span id="greeting-name">同学。</span></h1><p class="section-subtitle">安排下一次出发，让每个进度都清晰可见。</p></div><div class="clock">当前时间 · 北京时间<time id="dashboard-clock">—</time></div></div>
+<div class="dashboard-grid">
+<section class="card account-card" aria-labelledby="account-title"><div class="account-main"><div class="account-top"><div class="account-avatar"><svg aria-hidden="true" focusable="false" class="icon"><use href="#i-user"/></svg></div><span class="tag">已连接 · 真实身份</span></div><h2 id="account-title" class="account-name"><span id="user-name">—</span></h2><p id="user-school" class="account-school">—</p><div class="account-meta"><span id="user-student-id">—</span><span class="dot"></span><span id="user-weight">—</span></div><details id="account-details" class="account-details"><summary>查看完整资料<svg aria-hidden="true" focusable="false" class="icon icon-sm chevron"><use href="#i-chevron"/></svg></summary><dl><dt>学号</dt><dd id="user-student-id-full">—</dd><dt>体重</dt><dd id="user-weight-full">—</dd><dt>累计里程</dt><dd id="user-total-distance">—</dd><dt>累计次数</dt><dd id="user-total-runs">—</dd></dl></details></div>
+<div class="quota-block"><p class="quota-label">本学期进度</p><div class="quota-number"><strong id="quota-available">—</strong><span>次</span></div><div class="quota-meta"><span>学期标准 <b id="quota-reserved">—</b> 次</span><span>还差 <b id="quota-remaining">—</b> 次</span><span>总里程 <b id="quota-distance">—</b> km</span></div><p class="quota-free" id="quota-free" hidden>另：自由跑 <b id="quota-free-count">0</b> 次（平台记录可见，<strong>不计入学期成绩</strong>）</p><p class="quota-note" id="quota-note">进度取自平台 /stats 接口。</p><button id="recharge-button" class="button button-secondary button-wide button-small" type="button" data-info="semester-progress">学期标准怎么算？<svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-arrow"/></svg></button></div><div class="account-footer"><button id="refresh-dashboard" class="button button-ghost button-small" type="button"><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-reset"/></svg>刷新视图</button><button id="switch-account" class="button button-ghost button-small" type="button"><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-logout"/></svg>切换身份</button></div></section>
+<section class="card current-card" aria-labelledby="current-title"><div class="card-heading"><div><p class="eyebrow">IN PROGRESS</p><h2 id="current-title" style="margin-top:4px">当前任务</h2></div><span id="current-status" class="status" data-status="idle">暂无任务</span></div><div id="current-task"><div class="empty-state"><svg aria-hidden="true" focusable="false" class="icon empty-icon"><use href="#i-route"/></svg><div><strong>现在，留一点从容。</strong><p>提交一个任务后，就可以在这里查看进度。</p></div></div></div></section>
+<section class="card run-card" aria-labelledby="run-title"><div class="card-heading"><div><h2 id="run-title">安排一次跑步</h2><p class="section-subtitle">设置距离与时长，页面会实时对照平台规则。</p></div><span class="section-icon"><svg aria-hidden="true" focusable="false" class="icon"><use href="#i-route"/></svg></span></div><form id="run-form" novalidate><fieldset><legend class="sr-only">提交方式</legend><div id="run-mode-segment" class="segment run-mode" data-active="0"><label class="segment-label"><input type="radio" name="run-mode" value="now" checked><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-bolt"/></svg>立即提交</label><label class="segment-label"><input type="radio" name="run-mode" value="scheduled"><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-calendar"/></svg>预约提交</label></div></fieldset>
+<div class="field"><label class="field-label" for="distance-km">距离（km）<span class="field-help" id="distance-help">按性别预填，可改</span></label><div class="stepper"><button type="button" class="button button-ghost button-small" data-step="distance-km" data-delta="-0.1">−0.1</button><input id="distance-km" name="distance-km" type="number" step="0.01" min="0.01" value="" inputmode="decimal" aria-describedby="compliance-note"><button type="button" class="button button-ghost button-small" data-step="distance-km" data-delta="0.1">+0.1</button></div></div>
+<div class="field"><label class="field-label" for="duration-sec">时长（秒）<span class="field-help" id="duration-help">按平台配速区间预填，可改</span></label><div class="stepper"><button type="button" class="button button-ghost button-small" data-step="duration-sec" data-delta="-10">−10</button><button type="button" class="button button-ghost button-small" data-step="duration-sec" data-delta="-1">−1</button><input id="duration-sec" name="duration-sec" type="number" step="1" min="1" value="600" inputmode="numeric" aria-describedby="compliance-note"><button type="button" class="button button-ghost button-small" data-step="duration-sec" data-delta="1">+1</button><button type="button" class="button button-ghost button-small" data-step="duration-sec" data-delta="10">+10</button></div></div>
+<p id="compliance-note" class="run-note" role="status" aria-live="polite"><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-info"/></svg><span id="compliance-text">正在读取平台规则…</span></p>
+<fieldset class="route-mode-field"><legend class="sr-only">跑步类型</legend><div id="route-mode-segment" class="segment route-mode" data-active="0"><label class="segment-label"><input type="radio" name="route-mode" value="campus" checked><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-route"/></svg>操场路线</label><label class="segment-label"><input type="radio" name="route-mode" value="free"><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-bolt"/></svg>自由跑</label></div></fieldset>
+<div class="route-choice"><svg aria-hidden="true" focusable="false" class="icon route-map" viewBox="0 0 36 36"><rect x="7" y="3" width="22" height="30" rx="11"/><rect x="12" y="8" width="12" height="20" rx="6"/><path d="M7 18h5m12 0h5"/></svg><div><h3 id="route-title">操场路线</h3><p id="route-desc">先获取附近路线并选择</p></div><div class="route-distance"><span id="route-distance">1.2</span><small>km</small></div></div>
+<div class="field" id="route-pick-field"><label class="field-label" for="route-select">路线<span class="field-help" id="route-pick-help">未获取</span></label><div class="stepper"><select id="route-select" style="flex:1;min-width:0;padding:8px;border-radius:9px;border:1px solid var(--line);background:#fff" aria-describedby="route-pick-help"><option value="">未获取路线</option></select><button type="button" id="routes-fetch" class="button button-secondary button-small">获取附近路线</button></div><div id="routes-manual" style="margin-top:6px;display:none;gap:6px;align-items:center"><input id="manual-lat" type="number" step="0.000001" placeholder="纬度 lat" style="width:110px;padding:6px;border-radius:8px;border:1px solid var(--line)"><input id="manual-lng" type="number" step="0.000001" placeholder="经度 lng" style="width:110px;padding:6px;border-radius:8px;border:1px solid var(--line)"><button type="button" id="routes-fetch-manual" class="button button-ghost button-small">用此坐标获取</button></div></div><div id="schedule-fields" class="field" hidden><label class="field-label" for="schedule-datetime">预约时间<span class="field-help">北京时间</span></label><input id="schedule-datetime" name="schedule-datetime" type="datetime-local" step="60" aria-describedby="schedule-help"><p id="schedule-help" class="section-subtitle">到点由本机服务器自动提交；若平台届时不允许开跑，会记为失败并保留平台原文。</p></div><p id="run-message" class="form-message" role="status" aria-live="polite" hidden></p><div class="submit-row"><p id="run-submit-help">窗口外会自动排到下一个开跑时间，不必手填。</p><button id="run-submit" class="button button-primary" type="submit">提交跑步<svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-arrow"/></svg></button></div></form></section>
+<section class="card queue-card" aria-labelledby="queue-title"><div class="card-heading"><div><h2 id="queue-title">接下来的安排<span id="queue-count" class="count-badge">0</span></h2><p class="section-subtitle">按预约时间依次执行，同一时刻只运行一个任务。</p></div><svg aria-hidden="true" focusable="false" class="icon" style="color:#8298b1"><use href="#i-calendar"/></svg></div><div id="queue-list" class="queue-list"><div class="empty-state queue-empty"><svg aria-hidden="true" focusable="false" class="icon empty-icon"><use href="#i-calendar"/></svg><div><strong>你的时间，由你安排。</strong><p>预约的任务会出现在这里。</p></div></div></div></section>
+<section class="card records-card" aria-labelledby="records-title"><div class="card-heading"><div><h2 id="records-title">每一步，都有记录<span id="records-count" class="count-badge">0</span></h2><p class="section-subtitle">平台已录入的记录与本机提交日志并列。</p></div><button id="refresh-records" class="button button-ghost button-small" type="button"><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-reset"/></svg>刷新</button></div><div id="records-header" class="records-header" aria-hidden="true"><span>来源 / 编号</span><span>结束时间</span><span>距离</span><span>时长</span><span>配速</span><span>状态</span></div><div id="records-list" class="records-list"><div class="empty-state" style="margin-top:16px"><svg aria-hidden="true" focusable="false" class="icon empty-icon"><use href="#i-route"/></svg><div><strong>第一条记录，正在路上。</strong><p>提交跑步后，结果会保留在这里。</p></div></div></div><p class="records-footnote" id="records-footnote">「平台」为校园平台返回的真实记录，「本机」为本服务器发出的提交日志。两者并列展示以便核对。</p></section>
+
+<details id="console-details" class="card console-card"><summary><div class="console-heading"><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-sliders"/></svg><div><strong>调试 · 干跑预览</strong><span>生成轨迹并核对收敛，不向平台提交</span></div></div><svg aria-hidden="true" focusable="false" class="icon icon-sm chevron"><use href="#i-chevron"/></svg></summary><div class="console-content"><p class="console-note">干跑会用当前的距离与时长生成完整的 GPS 轨迹，并把将要提交的请求体与服务端的自检数据一起返回。<strong>整个过程不发送任何提交请求</strong>。</p><div class="console-context"><div>轨迹点数<strong id="preview-points">—</strong></div><div>环长（米）<strong id="preview-ring">—</strong></div><div>申报 / 实走<strong id="preview-distance">—</strong></div><div>收敛残差<strong id="preview-residual">—</strong></div></div><div class="console-controls"><button id="run-preview" class="button button-secondary button-small" type="button"><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-play"/></svg>生成干跑预览</button><button id="toggle-raw" class="button button-ghost button-small" type="button" hidden><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-info"/></svg>查看请求体</button></div><div id="preview-track" class="console-track" hidden><svg id="track-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" role="img" aria-label="轨迹平面图"><polyline id="track-line" fill="none" stroke="#1769e8" stroke-width="0.6" points=""/><circle id="track-start" r="1.6" fill="#267565"/></svg><p class="section-subtitle" id="track-caption">轨迹点投影，仅供形状核对。</p></div><pre id="preview-raw" class="console-raw" hidden></pre><p id="console-message" class="form-message" role="status" aria-live="polite" hidden></p>
+<div style="margin-top:18px;border-top:1px solid var(--line);padding-top:14px">
+<div class="console-controls"><button id="diag-run" class="button button-secondary button-small" type="button">运行本地诊断</button><button id="diag-probe" class="button button-ghost button-small" type="button">加只读探活（GET）</button></div>
+<p class="section-subtitle" style="margin-top:8px">本地诊断只看配置与状态文件；探活会向平台发 3 个只读 GET（档案 / 规则 / 附近路线），不发任何写请求。</p>
+<pre id="diag-out" class="console-raw" hidden></pre>
+</div>
+</div></details>
+</div></section>
+</main>
+<footer class="site-footer shell"><span><span class="footer-brand">校园跑 · MOVE WITH EASE</span><span class="footer-dot" aria-hidden="true">/</span>把节奏，还给自己。</span><span id="storage-notice">本机服务器直连校园平台 · 请勿在公共设备上保持连接</span><span id="lan-notice"></span></footer>
+<div id="toast" class="toast glass" role="status" aria-live="polite" hidden><svg aria-hidden="true" focusable="false" class="icon icon-sm"><use href="#i-check"/></svg><span id="toast-message"></span></div>
+<dialog id="info-dialog" class="glass" aria-labelledby="info-dialog-title" aria-describedby="info-dialog-description"><div class="dialog-symbol"><svg aria-hidden="true" focusable="false" class="icon"><use href="#i-info"/></svg></div><h2 id="info-dialog-title">说明</h2><p id="info-dialog-description">—</p><p id="info-dialog-caption" class="dialog-caption">—</p><div class="dialog-actions"><button id="info-dialog-cancel" class="button button-secondary" type="button" hidden>取消</button><button id="info-dialog-confirm" class="button button-primary" type="button">知道了</button></div></dialog>
+<dialog id="reset-dialog" class="glass" aria-labelledby="reset-dialog-title" aria-describedby="reset-dialog-description"><div class="dialog-symbol danger"><svg aria-hidden="true" focusable="false" class="icon"><use href="#i-reset"/></svg></div><h2 id="reset-dialog-title">重新开始这次体验？</h2><p id="reset-dialog-description">将清空当前标签页中的身份、任务与记录，并返回未绑定状态。</p><div class="dialog-actions"><button id="reset-cancel" class="button button-secondary" type="button">保留当前体验</button><button id="reset-confirm" class="button button-danger" type="button">确认重置</button></div></dialog>
+<template id="task-template"><article class="task-item"><div class="task-time"><span data-role="time"></span><small data-role="date"></small></div><div class="task-info"><h3 data-role="title">操场路线</h3><p class="task-meta"><span data-role="distance"></span><span data-role="duration"></span><span data-role="id"></span></p><p data-role="note" class="section-subtitle" hidden></p></div><div class="task-actions"><span data-role="status" class="status"></span><button class="button button-ghost button-small" type="button" data-action="cancel-task">取消预约</button></div></article></template>
+<template id="current-task-template"><div class="current-task-active"><article class="task-item"><div class="task-info"><h3 data-role="title">操场路线</h3><p class="task-meta"><span data-role="id"></span><span data-role="distance"></span><span data-role="duration"></span></p></div><div class="task-actions"><span data-role="status" class="status"></span></div></article><div class="task-progress" aria-hidden="true"><span data-role="progress"></span></div><p class="progress-meta" data-role="pace" hidden><svg aria-hidden="true" focusable="false" class="icon"><use href="#i-play"/></svg><span data-role="pace-text">—</span><span class="progress-replay" data-role="replay-note" hidden></span></p><p data-role="note" class="section-subtitle">到点后由本机服务器自动提交。</p></div></template>
+<template id="record-template"><article class="record-item"><span class="record-id" data-role="id"></span><span class="record-date" data-role="date"></span><span class="record-stat"><span class="record-mobile-label">距离</span><span data-role="distance"></span></span><span class="record-stat"><span class="record-mobile-label">时长</span><span data-role="duration"></span></span><span class="record-stat"><span class="record-mobile-label">配速</span><span data-role="pace"></span></span><span><span data-role="status" class="status"></span></span></article></template>
+<template id="empty-current-template"><div class="empty-state"><svg aria-hidden="true" focusable="false" class="icon empty-icon"><use href="#i-route"/></svg><div><strong>现在，留一点从容。</strong><p>提交一个任务后，就可以在这里查看进度。</p></div></div></template>
+<template id="empty-queue-template"><div class="empty-state queue-empty"><svg aria-hidden="true" focusable="false" class="icon empty-icon"><use href="#i-calendar"/></svg><div><strong>你的时间，由你安排。</strong><p>预约的任务会出现在这里。</p></div></div></template>
+<template id="empty-records-template"><div class="empty-state" style="margin-top:16px"><svg aria-hidden="true" focusable="false" class="icon empty-icon"><use href="#i-route"/></svg><div><strong>第一条记录，正在路上。</strong><p>任务结束后，结果会保留在这里。</p></div></div></template>
+<script id="app-script">
+/* 校园跑自托管 · 真实接入前端。零依赖，直连后端 /bind /state /rules /preview /confirm /run /schedule /records。 */
+(() => {
+  'use strict';
+
+  const $ = (id) => document.getElementById(id);
+  const pad = (n) => String(n).padStart(2, '0');
+  const TZ = 'Asia/Shanghai';
+
+  // ---------- 网络 ----------
+  async function apiGet(path) {
+    try {
+      const r = await fetch(path, { headers: { accept: 'application/json' } });
+      return { status: r.status, body: await r.json().catch(() => null) };
+    } catch (e) { return { status: 0, body: { ok: false, error: '无法连接本机服务器：' + e.message } }; }
+  }
+  async function apiSend(method, path, payload) {
+    try {
+      const r = await fetch(path, {
+        method, headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(payload || {}),
+      });
+      return { status: r.status, body: await r.json().catch(() => null) };
+    } catch (e) { return { status: 0, body: { ok: false, error: '请求失败：' + e.message } }; }
+  }
+  const apiPost = (p, b) => apiSend('POST', p, b);
+
+  // ---------- 时间（统一北京时间）----------
+  const fmtClock = (ms) => new Intl.DateTimeFormat('zh-CN', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }).format(new Date(ms));
+  const fmtShort = (ms) => new Intl.DateTimeFormat('zh-CN', { timeZone: TZ, month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(ms));
+  function localInput(ms) {
+    const d = new Date(ms + 8 * 3600e3);
+    return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}T${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}`;
+  }
+  function parseLocalInput(s) {
+    const m = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})$/.exec(String(s));
+    if (!m) return null;
+    const Y = +m[1], M = +m[2], D = +m[3], h = +m[4], mi = +m[5];
+    if (M < 1 || M > 12 || D < 1 || D > 31 || h > 23 || mi > 59) return null;
+    const ms = Date.UTC(Y, M - 1, D, h, mi) - 8 * 3600e3;
+    return Number.isSafeInteger(ms) ? ms : null;
+  }
+  // 秒 -> "M'SS""（与后端 finishBody.pace 同格式；此处仅用于展示本地日志）
+  function paceStr(secPerKm) {
+    if (!Number.isFinite(secPerKm) || secPerKm <= 0) return '—';
+    const m = Math.floor(secPerKm / 60), s = Math.round(secPerKm % 60);
+    return s === 60 ? `${m + 1}'00"` : `${m}'${pad(s)}"`;
+  }
+
+  // ---------- 应用态 ----------
+  let appState = null;      // GET /state
+  let serverDefaults = null;   // /rules 下发的默认距离/时长（按性别 + 平台配速区间推导）
+  let serverWindow = null;     // /rules 抠出的开跑窗口 {startMin,endMin}
+  // 规则签名：'<schoolId>_<sex>_<minDistance>_<minDuration>_<maxDuration>_<minPace>_<maxPace>'。
+  // 签名变化（换账号 / 换学校 / 性别变）才重填默认值 —— 只用一个布尔量的话，
+  // 切换账号后新账号的默认值（男 2.0 / 女 1.5 不同）永远不会被填，会沿用上个账号的值。
+  // 参考实现用 [schoolId,gender,minSec,maxSec] 拼接后比较
+  let defaultsSig = null;
+  let rules = null;         // GET /rules 的 rules
+  let rulesError = null;
+  let previewData = null;   // POST /preview
+  let toastTimer = null;
+  let dialogReturnFocus = null;
+  let confirmAction = null;
+  let busy = false;
+
+  const infoDialog = $('info-dialog');
+  const resetDialog = $('reset-dialog');
+  const messageTargets = ['bind-message', 'run-message', 'console-message'];
+
+  // ---------- 反馈 ----------
+  function announce(message, target, error) {
+    if (target && $(target)) {
+      $(target).hidden = false;
+      $(target).textContent = message;
+      $(target).dataset.error = String(Boolean(error));
+      $(target).dataset.tone = error ? 'error' : 'success';
+    }
+    clearTimeout(toastTimer);
+    const t = $('toast');
+    t.hidden = false;
+    t.dataset.error = String(Boolean(error));
+    t.querySelector('use').setAttribute('href', error ? '#i-info' : '#i-check');
+    $('toast-message').textContent = '';
+    queueMicrotask(() => { $('toast-message').textContent = message; });
+    toastTimer = setTimeout(() => { t.hidden = true; }, 6500);
+  }
+
+  function rememberFocus(fallbackEl) {
+    const a = document.activeElement;
+    // BODY/html 不是有意义的落点；此时改用调用方给的显式兜底（通常是触发按钮本身）
+    dialogReturnFocus = (a && a !== document.body && a !== document.documentElement) ? a : (fallbackEl || null);
+  }
+  // 关闭后把焦点还给触发元素；若它已 disabled（例如提交按钮在等待确认期间被禁用），
+  // 退回一个稳定的可聚焦目标，否则焦点会掉到 BODY。
+  function restoreFocus() {
+    const el = dialogReturnFocus;
+    // BODY / documentElement 不是有意义的落点：禁用聚焦元素时浏览器会把 activeElement 推到 BODY，
+    // 若把它们当成合法目标，焦点就会停在 BODY 上（等于没恢复）。
+    const usable = el && el !== document.body && el !== document.documentElement
+      && el.isConnected && !el.disabled && typeof el.focus === 'function';
+    if (usable) { el.focus(); return; }
+    // 触发元素已被禁用（例如提交按钮在等待确认期间被 disable），退回稳定的可聚焦目标
+    const fallback = $('run-submit').disabled ? $('run-form') : $('run-submit');
+    if (fallback) {
+      if (fallback === $('run-form') && !fallback.hasAttribute('tabindex')) fallback.tabIndex = -1;
+      fallback.focus();
+    }
+  }
+
+  function openInfo(opts) {
+    rememberFocus(opts && opts.returnTo);
+    $('info-dialog-title').textContent = opts.title || '说明';
+    $('info-dialog-description').textContent = opts.description || '';
+    $('info-dialog-caption').textContent = opts.caption || '';
+    $('info-dialog-confirm').textContent = opts.confirmLabel || '知道了';
+    $('info-dialog-cancel').hidden = !opts.onConfirm;
+    confirmAction = opts.onConfirm || null;
+    infoDialog.showModal();
+  }
+  function openReset(opts) {
+    rememberFocus();
+    if (opts && opts.title) $('reset-dialog-title').textContent = opts.title;
+    if (opts && opts.description) $('reset-dialog-description').textContent = opts.description;
+    if (opts && opts.cancelLabel) $('reset-cancel').textContent = opts.cancelLabel;
+    if (opts && opts.confirmLabel) $('reset-confirm').textContent = opts.confirmLabel;
+    confirmAction = (opts && opts.onConfirm) || null;
+    resetDialog.showModal();
+  }
+
+  for (const dlg of [infoDialog, resetDialog]) {
+    dlg.addEventListener('keydown', (event) => {
+      if (event.key !== 'Tab') return;
+      // 只收真正可聚焦的元素：SVG <use href> 会命中 [href] 却不可聚焦，
+      // 一旦它被当成 first，activeElement === first 永不成立，preventDefault 就从不执行 → 焦点逃出弹窗。
+      const FOCUSABLE = 'button, input:not([type="hidden"]), select, textarea, summary, a[href], [tabindex]:not([tabindex="-1"])';
+      const items = [...dlg.querySelectorAll(FOCUSABLE)]
+        .filter((el) => !el.disabled && !el.hidden && el.getAttribute('aria-hidden') !== 'true' && el.offsetParent !== null);
+      if (!items.length) return;
+      const first = items[0], last = items[items.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    });
+    dlg.addEventListener('cancel', () => { confirmAction = null; announce('已取消。'); });
+    // close 是所有关闭路径的必经点（取消按钮 / Escape / 确认后 close）。
+    // 必须在这里重算按钮：/confirm 成功后按钮被置 disabled，若取消路径不复位，
+    // 它会一直灰到下次周期刷新（实测可达 11 秒以上）。
+    // 先重算按钮再恢复焦点：顺序反了的话，restoreFocus 时按钮仍是 disabled，
+    // 就回不到触发元素上，只能退到表单容器。
+    dlg.addEventListener('close', () => { confirmAction = null; updateCompliance(); restoreFocus(); });
+  }
+  $('info-dialog-cancel').addEventListener('click', () => { confirmAction = null; infoDialog.close(); announce('已取消。'); });
+  // 用户改动不需要额外标记：签名不变时 applyDefaults 本来就不会覆盖。
+  $('info-dialog-confirm').addEventListener('click', () => {
+    const fn = confirmAction;
+    confirmAction = null;
+    infoDialog.close();
+    if (fn) fn();
+  });
+  $('reset-cancel').addEventListener('click', () => { resetDialog.close(); announce('已取消。'); });
+  $('reset-confirm').addEventListener('click', () => {
+    const fn = confirmAction;
+    confirmAction = null;
+    resetDialog.close();
+    if (fn) fn();
+  });
+
+  // ---------- 合规提示 ----------
+  function routeMode() { return document.querySelector('input[name="route-mode"]:checked').value; }
+  function runMode() { return document.querySelector('input[name="run-mode"]:checked').value; }
+  function isFree() { return routeMode() === 'free'; }
+
+  // 默认值只在首次拿到 /rules 时填一次。之后刷新不覆盖用户改动 —— 否则每 20 秒静默刷新
+  // 都会把用户刚调好的距离/时长打回去。
+  function ruleSignature() {
+    const r = rules || {};
+    return [r.schoolId, r.sex, r.minDistance, r.minDuration, r.maxDuration, r.minPace, r.maxPace].join('_');
+  }
+  // 默认值只在「规则签名变了」时填。同一套规则下不动 —— 否则每 20 秒静默刷新会把用户
+  // 刚调好的距离/时长打回去。注意签名里不含 runAvailableNow：那是时段性的，不该重置用户参数。
+  function applyDefaults() {
+    if (!serverDefaults) return;
+    const sig = ruleSignature();
+    if (sig === defaultsSig) return;
+    defaultsSig = sig;
+    const dk = $('distance-km'), ds = $('duration-sec');
+    if (dk) dk.value = serverDefaults.distanceKm;
+    if (ds) ds.value = serverDefaults.durationSec;
+  }
+
+  function updateHints() {
+    const r = rules || {};
+    const dh = $('distance-help'), sh = $('duration-help');
+    if (dh) dh.textContent = typeof r.minDistance === 'number' ? `平台下限 ${r.minDistance.toFixed(2)}` : '按性别预填，可改';
+    if (sh) {
+      const a = typeof r.minDuration === 'number' ? r.minDuration : null;
+      const b = typeof r.maxDuration === 'number' ? r.maxDuration : null;
+      sh.textContent = (a !== null && b !== null) ? `平台区间 ${a} ~ ${b}` : '按平台配速区间预填，可改';
+    }
+  }
+  function setBackendBadge(isDemo) {
+    const el = $('backend-badge');
+    if (!el) return;
+    el.hidden = false;
+    el.textContent = isDemo ? '演示模式' : '直连平台';
+    const banner = $('demo-banner');
+    if (banner) banner.hidden = !isDemo;
+  }
+  function compliance() {
+    const dk = Number($('distance-km').value);
+    const ds = Number($('duration-sec').value);
+    let outOfWindow = '';
+    const free = isFree();
+    const scheduled = runMode() === 'scheduled';
+    if (!Number.isFinite(dk) || dk <= 0) return { ok: false, text: '距离必须是正数。' };
+    if (!Number.isFinite(ds) || ds <= 0) return { ok: false, text: '时长必须是正数。' };
+    // 自由跑不受平台规则约束（实测不查窗口、不限时长配速），没有规则也要能提交
+    if (free) return { ok: true, free: true, text: '自由跑计入平台记录，但不计入学期有效成绩。' };
+    if (!rules) return { ok: false, text: rulesError ? '平台规则未取到：' + rulesError : '正在读取平台规则…', unknown: true };
+    const bad = [];
+    // ★ 窗口只在「立即提交的校园跑」上拦。预约的语义是现在下单、到点执行，
+    //   窗口该由后端调度器到点自查（server.js tick()），不该连坐禁用按钮。
+    // 窗口外不算「不合规」：点提交会自动排到下一个开跑时间（后端 nextWindowStart）。
+    // 这里只提示，不拦按钮 —— 用户不必再手动改用预约并手填 datetime。
+    if (!scheduled && rules.runAvailableNow !== true) {
+      const w = windowStartFrom(rules.runUnavailableReason);
+      if (w) {
+        outOfWindow = '不在开跑窗口，提交后会自动排到 ' + fmtClockShort(w) + '（北京时间）';
+      } else {
+        // 平台只说「今日不允许开始跑步」这类话、没给时间窗口时，后端排不出期（会 400）。
+        // 这里必须如实拦住并禁用按钮 —— 否则前端说「会自动排期」而后端报错，是自相矛盾。
+        bad.push('现在不能开跑：' + (rules.runUnavailableReason || '平台未说明原因')
+          + '（平台没给具体窗口，排不出期；可切到「预约提交」选之后的日期）');
+      }
+    }
+    if (typeof rules.minDistance === 'number' && dk < rules.minDistance) bad.push(`距离 ${dk}km 小于下限 ${rules.minDistance}km`);
+    if (typeof rules.minDuration === 'number' && ds < rules.minDuration) bad.push(`时长 ${ds}s 低于下限 ${rules.minDuration}s`);
+    if (typeof rules.maxDuration === 'number' && ds > rules.maxDuration) bad.push(`时长 ${ds}s 超过上限 ${rules.maxDuration}s`);
+    const pace = ds / dk;
+    if (typeof rules.minPace === 'number' && pace < rules.minPace) bad.push(`配速 ${Math.round(pace)}s/km 快于最快 ${rules.minPace}s/km`);
+    if (typeof rules.maxPace === 'number' && pace > rules.maxPace) bad.push(`配速 ${Math.round(pace)}s/km 慢于最慢 ${rules.maxPace}s/km`);
+    const paceTxt = `${paceStr(pace)} / km`;
+    if (bad.length) return { ok: false, text: `不合规：${bad.join('；')}（当前配速 ${paceTxt}）`, bad, outOfWindow };
+    const base = `合规：配速 ${paceTxt}。`;
+    return { ok: true, text: outOfWindow ? base + outOfWindow + '。' : base + '窗口以平台实时返回为准。', paceTxt, outOfWindow };
+  }
+  function updateCompliance() {
+    const c = compliance();
+    const el = $('compliance-text');
+    if (el) el.textContent = c.text;
+    const note = $('compliance-note');
+    if (note) note.dataset.tone = c.ok ? 'success' : (c.unknown ? '' : 'error');
+    // ★ 按钮只在「有真错误」或「忙」时禁用。窗口外不再禁用：提交会自动落窗。
+    $('run-submit').disabled = busy || (c.ok === false && !c.unknown);
+    return c;
+  }
+
+  // 从平台原文「仅允许在09:00~09:30开始跑步」抠窗口，与后端 server.js 的 nextWindowStart 同口径。
+  // 只用于「会自动排到几点」的提示与预约预填；不参与合规判定，也不硬编码 09:00。
+  function windowStartFrom(reason, nowMs) {
+    const out = windowRange(reason);
+    if (!out) return null;
+    const now = nowMs === undefined ? Date.now() : nowMs;
+    const bj = new Date(now + 8 * 3600e3);
+    const cur = bj.getUTCHours() * 60 + bj.getUTCMinutes();
+    const midnight = Date.UTC(bj.getUTCFullYear(), bj.getUTCMonth(), bj.getUTCDate());
+    let target = midnight + out.startMin * 60000;
+    if (cur > out.startMin && cur <= out.endMin) target = midnight + cur * 60000;
+    else if (cur > out.endMin) target = midnight + 24 * 3600e3 + out.startMin * 60000;
+    const local = target - 8 * 3600e3;
+    return local > now ? local + 2 * 60 * 1000 : local;   // +2 分钟，与后端 1~3 分钟抖动的中值对齐
+  }
+  function windowRange(reason) {
+    const m = /([0-9]{1,2}):([0-9]{2})[^0-9]{0,6}([0-9]{1,2}):([0-9]{2})/.exec(String(reason || ''));
+    if (!m) return null;
+    const sh = +m[1], sm = +m[2], eh = +m[3], em = +m[4];
+    if (sh > 23 || sm > 59 || eh > 23 || em > 59) return null;
+    return { startMin: sh * 60 + sm, endMin: eh * 60 + em };
+  }
+  function fmtClockShort(ms) {
+    const bj = new Date(ms + 8 * 3600e3);
+    return pad(bj.getUTCHours()) + ':' + pad(bj.getUTCMinutes());
+  }
+  function prefillWindowStart(reason, nowMs) {
+    const r = windowRange(reason);
+    if (!r) return null;
+    const now = nowMs === undefined ? Date.now() : nowMs;
+    const bj = new Date(now + 8 * 3600e3);
+    const cur = bj.getUTCHours() * 60 + bj.getUTCMinutes();
+    // 已经在窗口内 -> 用当天窗口起点；否则用下一个窗口起点
+    if (cur > r.startMin && cur <= r.endMin) return now + 2 * 60 * 1000;
+    return windowStartFrom(reason, now);
+  }
+
+  // ---------- 渲染 ----------
+  function setStatus(node, text, status) {
+    if (!node) return;
+    node.textContent = text;
+    node.dataset.status = status;
+  }
+  const instantiate = (id) => $(id).content.firstElementChild.cloneNode(true);
+  const role = (node, name, value) => { const t = node.querySelector(`[data-role="${name}"]`); if (t) t.textContent = value; return t; };
+
+  // ---------- 实时进度 ----------
+  // 后端现在是真计时：start 建会话 → 等满 durationSec → 调度器提交。
+  // 页面只是观察者，进度完全由服务端下发的 session.startedAt/submitAt 决定，
+  // 所以关掉页面再打开，看到的还是同一个剩余时间 —— 不需要"回放"这种本地补偿。
+  let live = null;
+  let activeSession = null;
+
+  // 落定的跑步有两条写入路径，时间字段不同名也不同型，必须显式归一，不能直接比大小。
+  // schedules[]：finishedAt 是 Date.now() 毫秒数，由调度器写。
+  // runs[]：at 是 UTC ISO 带 Z 的字符串，由 /run 与调度器各写一次。
+  function pendingFromSchedule(e) {
+    // 预约只可能是校园跑：后端对 FREE + plannedAt 直接 400
+    return { key: e.id, runType: 'CAMPUS', distanceKm: e.distanceKm, durationSec: e.durationSec,
+             plannedAt: e.plannedAt, settledAt: 0, status: 'pending', reason: '' };
+  }
+
+  function settledFromSchedule(e) {
+    return { key: e.id, runType: 'CAMPUS', distanceKm: e.distanceKm, durationSec: e.durationSec,
+             plannedAt: e.plannedAt, settledAt: e.finishedAt || 0, status: e.status, reason: e.reason || '' };
+  }
+  function settledFromRun(r) {
+    const t = Date.parse(r.at);
+    return { key: r.scheduleId || r.sessionId || (r.platformId ? '平台 #' + r.platformId : '单发'),
+             runType: r.runType || 'CAMPUS',   // 调度器写的 runs 项缺这个字段，但那些项已在候选池滤掉
+             distanceKm: r.distanceKm, durationSec: r.durationSec,
+             plannedAt: null, settledAt: Number.isFinite(t) ? t : 0, status: 'success', reason: '' };
+  }
+
+  // 只在「当前卡是一条进行中的会话」时动 DOM；到 100% 后短路，避免每秒白写一次
+  function paintLive() {
+    if (!live || live.done) return;
+    const total = live.submitAt - live.startedAt;
+    const frac = total > 0 ? Math.min(1, Math.max(0, (Date.now() - live.startedAt) / total)) : 1;
+    live.prog.style.width = (frac * 100).toFixed(2) + '%';
+    const km = live.distanceKm * frac;
+    const used = (total / 1000) * frac;
+    const left = Math.max(0, Math.ceil((live.submitAt - Date.now()) / 1000));
+    // km 太小的时候配速没有意义（刚起步那几秒会算出天文数字），不到 50 米就显示「—」
+    live.text.textContent = km.toFixed(2) + ' / ' + live.distanceKm + ' km · '
+      + paceStr(km > 0.05 ? used / km : NaN) + '/km · 还有 ' + left + 's 提交';
+    if (frac >= 1) {
+      live.done = true;
+      live.box.dataset.live = '0';
+      live.note.textContent = '已到点 · 正在提交';
+      live.note.hidden = false;
+    }
+  }
+
+  function render() {
+    const bound = Boolean(appState && appState.user);
+    $('bind-screen').hidden = bound;
+    $('dashboard-screen').hidden = !bound;
+    $('header-user').hidden = !bound;
+    $('mode-badge').textContent = bound ? '已连接' : '未连接';
+    $('dashboard-clock').textContent = fmtClock(Date.now());
+    $('dashboard-clock').dateTime = new Date().toISOString();
+
+    const sched = (appState && appState.schedules) || [];
+    const localRuns = (appState && appState.runs) || [];
+
+    if (bound) {
+      const u = appState.user;
+      const name = u.name || '同学';
+      $('greeting-name').textContent = name + '。';
+      $('header-user-name').textContent = name;
+      $('user-name').textContent = name;
+      $('user-school').textContent = u.schoolName || '—';
+      $('user-student-id').textContent = u.studentId ? '学号 ' + u.studentId : '—';
+      $('user-weight').textContent = u.weight ? u.weight + ' kg' : '—';
+      $('user-student-id-full').textContent = u.studentId || '—';
+      $('user-weight-full').textContent = u.weight ? u.weight + ' kg' : '—';
+      $('user-total-distance').textContent = Number.isFinite(u.totalDistance) ? u.totalDistance + ' km' : '—';
+      $('user-total-runs').textContent = Number.isFinite(u.totalRuns) ? u.totalRuns + ' 次' : '—';
+    }
+
+    // 学期进度：只读后端归一化后的字段（server.js normalizeStats）。
+    // 这里曾经回落到 localRuns.length —— 把「本机提交过几次」冒充成「平台有效成绩」，
+    // 而本机日志还包含 FREE 与重试，两个数根本不是一回事。取不到就显示「—」。
+    const stats = (appState && appState.stats) || null;
+    const put = (id, v) => { const el = $(id); if (el) el.textContent = v; };
+    if (stats && stats.ok) {
+      const valid = Number.isFinite(stats.validCount) ? stats.validCount : null;
+      const need = Number.isFinite(stats.standardCount) ? stats.standardCount : null;
+      put('quota-available', valid === null ? '—' : String(valid));
+      put('quota-reserved', need === null ? '—' : String(need));
+      put('quota-remaining', (valid === null || need === null) ? '—' : String(Math.max(0, need - valid)));
+      put('quota-distance', Number.isFinite(stats.totalDistanceKm) ? stats.totalDistanceKm.toFixed(2) : '—');
+      $('quota-note').textContent = stats.label
+        ? `平台统计：${stats.label}${stats.details ? '，' + stats.details : ''}。`
+        : '平台统计已取到。';
+    } else {
+      for (const id of ['quota-available', 'quota-reserved', 'quota-remaining', 'quota-distance']) put(id, '—');
+      $('quota-note').textContent = '平台统计未取到：'
+        + ((appState && appState.statsError) || '未知原因')
+        + '（不显示本机条数，避免与有效成绩混淆）';
+    }
+    // 自由跑单列：平台 /stats 完全不含 FREE（连 totalAttempts 都不算），所以这个数只能来自
+    // 平台记录列表（不是本机日志 —— 本机日志可能压根没记，数它会让「平台上明明有两条 FREE」
+    // 却显示 0）。取不到平台记录时隐藏该行，而不是显示一个会撒谎的 0。
+    const platArr = (() => {
+      const p = appState && appState.platform;
+      if (Array.isArray(p)) return p;
+      if (p && Array.isArray(p.records)) return p.records;
+      if (p && Array.isArray(p.list)) return p.list;
+      return null;
+    })();
+    const freeCount = platArr ? platArr.filter((r) => (r.runType || 'CAMPUS') === 'FREE').length : null;
+    if ($('quota-free')) {
+      if (freeCount === null) {
+        $('quota-free').hidden = true;
+      } else {
+        $('quota-free-count').textContent = String(freeCount);
+        $('quota-free').hidden = freeCount === 0;
+      }
+    }
+
+    // 当前任务 = 最靠前的一条待执行预约；没有待执行的，就显示最近一次落定的跑步。
+    // 落定候选来自两个源：预约（schedules[] 的 success/failed）与单发（runs[]，自由跑走这条）。
+    // via === 'schedule' 的 runs 项与 schedules[] 里的 success 是同一次提交，取 schedules 那份
+    // （它有明确的 runType 与 plannedAt），所以这里把它滤掉，免得同一件事出现两遍。
+    const pending = sched.filter((s) => s.status === 'pending').map(pendingFromSchedule).sort((a, b) => a.plannedAt - b.plannedAt);
+    const settled = [
+      ...sched.filter((s) => s.status === 'success' || s.status === 'failed').map(settledFromSchedule),
+      ...localRuns.filter((r) => r.via !== 'schedule').map(settledFromRun),
+    ].sort((a, b) => b.settledAt - a.settledAt)[0] || null;
+    // 进行中的会话优先级最高：它是唯一"正在真实计时"的东西
+    const sessionAcc = (appState && appState.session) || null;
+    activeSession = sessionAcc;
+    const current = sessionAcc
+      ? { key: '会话 ' + sessionAcc.sessionId, runType: 'CAMPUS', distanceKm: sessionAcc.distanceKm,
+          durationSec: sessionAcc.durationSec, plannedAt: null, settledAt: 0, status: 'running', reason: '',
+          session: sessionAcc }
+      : (pending[0] || settled);
+    const curBox = $('current-task');
+    live = null;
+    if (!current) {
+      curBox.replaceChildren(instantiate('empty-current-template'));
+      setStatus($('current-status'), '暂无任务', 'idle');
+    } else {
+      const node = instantiate('current-task-template');
+      const isPending = current.status === 'pending';
+      const isFree = current.runType === 'FREE';
+      role(node, 'title', isFree ? '自由跑' : '操场路线');
+      role(node, 'id', current.key);
+      role(node, 'distance', `${current.distanceKm} km`);
+      role(node, 'duration', `${current.durationSec}s`);
+
+      // 徽章文案与色调。success 以前在前端被静默忽略，任务一成功就从卡里消失，
+      // 也就没机会回放 —— 这里补上。
+      let text, tone;
+      if (current.status === 'running') {
+        text = '跑步中'; tone = 'ready';
+      } else if (isPending) {
+        const due = current.plannedAt <= Date.now();
+        text = due ? '等待调度' : '已预约';
+        tone = due ? 'ready' : 'scheduled';
+      } else if (current.status === 'failed') {
+        text = '失败'; tone = 'failed';
+      } else {
+        text = '已完成'; tone = 'success';
+      }
+      setStatus(role(node, 'status', text), text, tone);
+      setStatus($('current-status'), text, tone);
+
+      role(node, 'note', current.status === 'running'
+        ? `会话 #${current.session.sessionId} 已建立，真实计时中。可以关掉这个页面，本机进程保持运行即可。`
+        : (isPending
+          ? `预约时间 ${fmtShort(current.plannedAt)}（北京时间）。到点后由本机服务器自动提交。`
+          : (current.status === 'failed'
+            ? `失败原因：${current.reason || '未记录'}`
+            : `完成时间 ${fmtShort(current.settledAt)}（北京时间）· ${isFree ? '自由跑不计学期成绩' : '已计入学期成绩'}`)));
+
+      // 进行中的会话显示真实进度；已完成的记录显示 100%（没有回放，也不再假装在跑）
+      const paceBox = node.querySelector('[data-role="pace"]');
+      if (current.status === 'running' && current.durationSec > 0) {
+        paceBox.hidden = false;
+        live = {
+          prog: node.querySelector('[data-role="progress"]'),
+          box: node.querySelector('.task-progress'),
+          text: node.querySelector('[data-role="pace-text"]'),
+          note: node.querySelector('[data-role="replay-note"]'),
+          distanceKm: current.distanceKm, durationSec: current.durationSec,
+          startedAt: current.session.startedAt, submitAt: current.session.submitAt, done: false,
+        };
+        live.box.dataset.live = '1';
+        live.note.textContent = current.session.jittered ? '申报值已小幅浮动' : '';
+        live.note.hidden = !current.session.jittered;
+        paintLive();
+      } else if (!isPending && current.status !== 'failed' && current.durationSec > 0) {
+        paceBox.hidden = false;
+        const prog = node.querySelector('[data-role="progress"]');
+        prog.style.width = '100%';
+        node.querySelector('[data-role="pace-text"]').textContent = current.distanceKm + ' km · 已提交';
+        node.querySelector('.task-progress').dataset.live = '0';
+      } else {
+        paceBox.hidden = true;
+      }
+      curBox.replaceChildren(node);
+    }
+
+    // 预约队列
+    const qNodes = sched.filter((s) => s.status === 'pending').map((job) => {
+      const node = instantiate('task-template');
+      role(node, 'time', fmtShort(job.plannedAt));
+      role(node, 'date', fmtShort(job.plannedAt));
+      role(node, 'distance', `${job.distanceKm} km`);
+      role(node, 'duration', `${job.durationSec}s`);
+      role(node, 'id', job.id);
+      role(node, 'title', '操场路线');
+      const note = role(node, 'note', `等待 ${fmtShort(job.plannedAt)} 到点后自动提交`);
+      note.hidden = false;
+      setStatus(role(node, 'status', '已预约'), '已预约', 'scheduled');
+      const btn = node.querySelector('[data-action="cancel-task"]');
+      btn.dataset.taskId = job.id;
+      btn.setAttribute('aria-label', `取消预约 ${job.id}`);
+      return node;
+    });
+    $('queue-list').replaceChildren(...(qNodes.length ? qNodes : [instantiate('empty-queue-template')]));
+    $('queue-count').textContent = String(qNodes.length);
+
+    // 记录：平台 + 本机并列
+    // 复用进度卡那段已解析好的平台列表（null = 没取到，[] = 取到但空）
+    const platformList = platArr || [];
+    // 去重键降级：sessionId → platformId/id → 本机时间戳。一律 String()：
+    // 平台返数字 1001、本机可能存 "1001"，'s:'+1001 !== 's:'+'1001' 会静默多出一行。
+    const keyOf = (r) => {
+      if (r.sessionId != null) return 's:' + String(r.sessionId);
+      const pid = r.platformId != null ? r.platformId : r.id;
+      if (pid != null) return 'p:' + String(pid);
+      return 't:' + String(r.at || r.endTime || '');
+    };
+    // 平台优先：同一次跑步平台已经返回了，本机那条只用来补平台不返回的自检字段。
+    const platRows = platformList.map((r) => ({ src: '平台', rec: r }));
+    const byKey = new Map(platRows.map((x) => [keyOf(x.rec), x.rec]));
+    for (const r of localRuns) {
+      const hit = byKey.get(keyOf(r));
+      if (!hit) continue;
+      if (r.residualPct !== undefined) hit.residualPct = r.residualPct;
+      if (r.trackPoints !== undefined && hit.trackPoints === undefined) hit.trackPoints = r.trackPoints;
+    }
+    const rows = [
+      ...platRows,
+      ...localRuns.filter((r) => !byKey.has(keyOf(r))).map((r) => ({ src: '本机', rec: r })),
+    ];
+    // 平台 status 是数字 0/1/2（app-service.js:1882），原来拿 'failed' 做字符串比较，
+    // 结果平台记录一律显示「成功」—— 无效记录永远认不出来。
+    const STATUS_UI = { success: '有效', failed: '失败', invalid: '无效', pending: '待同步', unknown: '—' };
+    const STATUS_TONE = { success: 'success', failed: 'failed', invalid: 'invalid', pending: 'ready', unknown: 'idle' };
+    const rNodes = rows.map(({ src, rec }) => {
+      const node = instantiate('record-template');
+      role(node, 'id', `${src} · ${rec.sessionId != null ? rec.sessionId : (rec.id || '—')}`);
+      const at = rec.at || rec.endTime || rec.createdAt;
+      role(node, 'date', at ? (typeof at === 'number' ? fmtShort(at) : String(at).replace('T', ' ').slice(5, 16)) : '—');
+      role(node, 'distance', Number.isFinite(rec.distance) ? `${rec.distance} km` : (Number.isFinite(rec.distanceKm) ? `${rec.distanceKm} km` : '—'));
+      const dur = Number.isFinite(rec.duration) ? rec.duration : rec.durationSec;
+      role(node, 'duration', Number.isFinite(dur) ? `${Math.floor(dur / 60)}分${pad(dur % 60)}秒` : '—');
+      role(node, 'pace', rec.pace || (Number.isFinite(rec.distance) && Number.isFinite(dur) ? paceStr(dur / rec.distance) : '—'));
+      const stKey = rec.status || 'success';
+      const stText = STATUS_UI[stKey] || '—';
+      setStatus(role(node, 'status', stText), stText, STATUS_TONE[stKey] || 'idle');
+      return node;
+    });
+    $('records-list').replaceChildren(...(rNodes.length ? rNodes : [instantiate('empty-records-template')]));
+    $('records-count').textContent = String(rNodes.length);
+    $('records-header').hidden = rNodes.length === 0;
+
+    // 预约时间输入
+    const dt = $('schedule-datetime');
+    dt.min = localInput(Date.now() + 60000);
+    if (!dt.value) dt.value = localInput(Date.now() + 30 * 60000);
+
+    $('route-distance').textContent = $('distance-km').value || '—';
+    updateMode();
+    updateCompliance();
+  }
+
+  function updateMode() {
+    const free = isFree();
+    // 自由跑不支持预约：FREE 不计成绩，排队执行没有意义，调度器也不必认识它
+    if (free) {
+      const nowRadio = document.querySelector('input[name="run-mode"][value="now"]');
+      if (nowRadio && !nowRadio.checked) { nowRadio.checked = true; announce('自由跑不支持预约，已切换为立即提交。'); }
+    }
+    const scheduled = !free && runMode() === 'scheduled';
+    $('schedule-fields').hidden = !scheduled;
+    $('schedule-datetime').disabled = !scheduled;
+    $('schedule-datetime').required = scheduled;
+    $('run-mode-segment').dataset.active = scheduled ? '1' : '0';
+    $('run-title').textContent = free ? '安排一次自由跑' : '安排一次跑步';
+    $('route-title').textContent = free ? '自由跑' : '操场路线';
+    $('route-desc').textContent = free ? '单发入库 · 不计学期成绩' : selectedRouteText();
+    $('route-mode-segment').dataset.active = free ? '1' : '0';
+    $('run-submit-help').textContent = free
+      ? '自由跑不受开跑窗口限制，但平台不计入学期有效成绩。'
+      : (scheduled
+        ? '预约需先授权：确认后会取得一次性令牌，到点由本机服务器自动提交。'
+        : '真实提交前会弹出确认框并索取一次性令牌。');
+    // 模式变了，提交按钮的可用性跟着变：就地重算，别等下一次输入事件
+    const c = compliance();
+    const note = $('compliance-note');
+    if (note) note.dataset.tone = c.ok ? 'success' : (c.unknown ? '' : 'error');
+    if ($('compliance-text')) $('compliance-text').textContent = c.text;
+    // 窗口外不再禁用按钮：提交会自动落窗，见 server.js 的 nextWindowStart
+    $('run-submit').disabled = busy || (!c.ok && !c.unknown);
+  }
+
+  // ---------- 数据加载 ----------
+  async function refreshAll(silent) {
+    const st = await apiGet('/state');
+    if (st.status === 200 && st.body) appState = st.body;
+    // 演示模式与是否已绑定无关：横幅要在绑定页就可见
+    if (appState && typeof appState.demo === 'boolean') setBackendBadge(appState.demo);
+    if (appState && appState.user) {
+      const rr = await apiGet('/rules');
+      if (rr.status === 200 && rr.body && rr.body.ok) {
+        rules = rr.body.rules; rulesError = null;
+        serverDefaults = rr.body.defaults || null;
+        serverWindow = rr.body.window || null;
+        if (typeof rr.body.demo === 'boolean') setBackendBadge(rr.body.demo);
+        applyDefaults();
+        updateHints();
+      }
+      else { rules = null; rulesError = (rr.body && rr.body.error) || 'HTTP ' + rr.status; }
+      const rec = await apiGet('/records');
+      if (rec.status === 200 && rec.body && rec.body.ok) {
+        appState.platform = rec.body.platform || null;
+        appState.stats = rec.body.stats || null;
+        appState.platformError = rec.body.platformError || null;
+      }
+    }
+    render();
+    if (!silent) announce('视图已刷新。');
+  }
+
+  // ---------- 附近路线（跨校：不再硬编码某条路线）----------
+  let myRoutes = [];          // {routeId,name,checkpoints,...}
+  let selectedRouteId = null;
+
+  function selectedRoute() { return myRoutes.find((r) => r.routeId === selectedRouteId) || null; }
+  function selectedRouteText() {
+    const r = selectedRoute();
+    return r ? `${r.name || '路线'} · routeId ${r.routeId}` : '未选路线 · 提交前先获取附近路线';
+  }
+  function renderRouteSelect() {
+    const sel = $('route-select');
+    sel.replaceChildren(...myRoutes.map((r) => {
+      const o = document.createElement('option');
+      o.value = String(r.routeId);
+      o.textContent = `${r.name || '路线 ' + r.routeId} · 环长约 ${Math.round(r.ringLenM || 0)}m · ${r.checkpoints.length} 点`;
+      return o;
+    }));
+    if (selectedRouteId != null) sel.value = String(selectedRouteId);
+    $('route-pick-help').textContent = myRoutes.length ? `${myRoutes.length} 条` : '未获取';
+    $('route-desc').textContent = isFree() ? '单发入库 · 不计学期成绩' : selectedRouteText();
+  }
+  async function fetchRoutes(lat, lng) {
+    $('routes-fetch').disabled = true;
+    announce('正在获取附近路线…', 'run-message');
+    const r = await apiGet(`/routes?lat=${lat}&lng=${lng}&limit=20`);
+    $('routes-fetch').disabled = false;
+    if (!(r.body && r.body.ok)) {
+      announce('获取路线失败：' + ((r.body && r.body.error) || 'HTTP ' + r.status), 'run-message', true);
+      $('routes-manual').style.display = 'flex';
+      return;
+    }
+    myRoutes = r.body.routes || [];
+    selectedRouteId = r.body.selectedRouteId != null ? r.body.selectedRouteId
+      : (myRoutes.length === 1 ? myRoutes[0].routeId : null);
+    if (myRoutes.length && selectedRouteId == null) {
+      // 不自动选多条：最近的不一定是学校要求的那条，让学生挑
+      announce(`取到 ${myRoutes.length} 条路线，请选择一条。`, 'run-message');
+    } else if (selectedRouteId != null) {
+      announce('路线已选定。', 'run-message');
+    } else {
+      announce('附近没有可用路线（打卡点不足 4 个的已剔除）。', 'run-message', true);
+    }
+    renderRouteSelect();
+    updateMode();
+  }
+  // 绑定后自动取路线：用户唯一动作是浏览器定位授权。被拒/不支持时用服务端下发的
+  // 学校坐标兜底（GET /config），两者都没有才退回手动输入。routeAutoAccount 保证
+  // 每个账号只尝试一次 —— 否则 20 秒静默刷新会反复弹定位并覆盖提示文案。
+  let routeAutoAccount = null;
+  async function ensureRoutes() {
+    const sid = appState && appState.active;
+    if (!sid || routeAutoAccount === sid) return;
+    if (routeAutoAccount !== null) { myRoutes = []; selectedRouteId = null; renderRouteSelect(); }
+    // 账号已有缓存路线（服务端存着上次取到的）就不必再定位
+    const cached = await apiGet('/routes');
+    if (cached.body && cached.body.ok && (cached.body.routes || []).length) {
+      myRoutes = cached.body.routes;
+      selectedRouteId = cached.body.selectedRouteId;
+      renderRouteSelect();
+      routeAutoAccount = sid;
+      return;
+    }
+    routeAutoAccount = sid;   // 先占位：并发刷新不会重复弹定位
+    const fallback = async () => {
+      const c = await apiGet('/config');
+      const lat = Number(c.body && c.body.schoolLat);
+      const lng = Number(c.body && c.body.schoolLng);
+      if (lat && lng && Number.isFinite(lat) && Number.isFinite(lng)) {
+        announce('无法定位，改用学校预设坐标获取路线…', 'run-message');
+        await fetchRoutes(lat.toFixed(7), lng.toFixed(7));
+        return;
+      }
+      $('routes-manual').style.display = 'flex';
+      announce('无法自动定位，请手动输入操场经纬度后点「用此坐标获取」。', 'run-message', true);
+    };
+    if (!navigator.geolocation) { await fallback(); return; }
+    await new Promise((resolve) => {
+      navigator.geolocation.getCurrentPosition(
+        async (pos) => { await fetchRoutes(pos.coords.latitude.toFixed(7), pos.coords.longitude.toFixed(7)); resolve(); },
+        async () => { await fallback(); resolve(); },
+        { timeout: 8000 });
+    });
+  }
+  $('routes-fetch').addEventListener('click', () => {
+    if (!navigator.geolocation) { $('routes-manual').style.display = 'flex'; announce('浏览器不支持定位，请手输坐标。', 'run-message', true); return; }
+    navigator.geolocation.getCurrentPosition(
+      (pos) => fetchRoutes(pos.coords.latitude.toFixed(7), pos.coords.longitude.toFixed(7)),
+      () => { $('routes-manual').style.display = 'flex'; announce('定位失败，请手动输入经纬度。', 'run-message', true); },
+      { timeout: 8000 });
+  });
+  $('routes-fetch-manual').addEventListener('click', () => {
+    const lat = Number($('manual-lat').value), lng = Number($('manual-lng').value);
+    if (!Number.isFinite(lat) || !Number.isFinite(lng) || Math.abs(lat) > 90 || Math.abs(lng) > 180) {
+      announce('请先填合法的纬度（-90~90）与经度（-180~180）。', 'run-message', true); return;
+    }
+    fetchRoutes(lat, lng);
+  });
+  $('route-select').addEventListener('change', async () => {
+    const routeId = Number($('route-select').value);
+    const r = await apiPost('/routes/select', { routeId });
+    if (r.body && r.body.ok) {
+      selectedRouteId = routeId;
+      announce('路线已选定：' + (r.body.name || routeId), 'run-message');
+    } else {
+      announce('选择失败：' + ((r.body && r.body.error) || 'HTTP ' + r.status), 'run-message', true);
+    }
+    renderRouteSelect();
+  });
+  // 首次进仪表盘时回填已缓存路线（无坐标也不触平台）
+  (async () => {
+    const r = await apiGet('/routes');
+    if (r.body && r.body.ok && (r.body.routes || []).length) {
+      myRoutes = r.body.routes;
+      selectedRouteId = r.body.selectedRouteId;
+      renderRouteSelect();
+    }
+  })();
+
+  // ---------- 绑定 ----------
+  $('bind-code').addEventListener('input', () => $('bind-code').removeAttribute('aria-invalid'));
+  $('paste-hint').addEventListener('click', async () => {
+    try {
+      if (!navigator.clipboard || !navigator.clipboard.readText) throw new Error('浏览器不允许读取剪贴板');
+      const txt = await navigator.clipboard.readText();
+      if (!txt) { announce('剪贴板为空。', 'bind-message', true); return; }
+      $('bind-code').value = txt.trim();
+      $('bind-code').focus();
+      announce('已从剪贴板填入，请点击「连接身份」。', 'bind-message');
+    } catch (e) {
+      announce('无法自动读取剪贴板，请手动粘贴（' + e.message + '）。', 'bind-message', true);
+    }
+  });
+  $('how-to-bind').addEventListener('click', () => openInfo({
+    title: '绑定码从哪里来？',
+    description: '绑定码是一段 Base64 文本，内容为 {"t":"…","d":"…","f":"…"} 三个字段。它由「取码工具」工具扫描微信进程内存后生成并复制到剪贴板，你只需在此粘贴。',
+    caption: '本页不会把绑定码发给第三方，只发送给本机 127.0.0.1 上的服务器。',
+  }));
+  $('bind-form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (busy) return;
+    const code = $('bind-code').value.trim();
+    if (!code) { $('bind-code').setAttribute('aria-invalid', 'true'); announce('请先粘贴绑定码。', 'bind-message', true); $('bind-code').focus(); return; }
+    busy = true;
+    $('bind-submit').disabled = true;
+    announce('正在向平台验证凭据…', 'bind-message');
+    const r = await apiPost('/bind', { code });
+    busy = false;
+    $('bind-submit').disabled = false;
+    if (r.body && r.body.ok) {
+      announce(`已连接：${r.body.user && r.body.user.name || ''} ${r.body.studentId || ''}`, 'bind-message');
+      $('bind-code').value = '';
+      await refreshAll(true);
+      ensureRoutes().catch(() => {});
+      $('dashboard-title').tabIndex = -1;
+      $('dashboard-title').focus();
+    } else {
+      $('bind-code').setAttribute('aria-invalid', 'true');
+      announce('连接失败：' + ((r.body && r.body.error) || ('HTTP ' + r.status)) + (r.body && r.body.detail ? ' — ' + String(r.body.detail).slice(0, 160) : ''), 'bind-message', true);
+      $('bind-code').focus();
+    }
+  });
+
+  // ---------- 参数变化 ----------
+  for (const id of ['distance-km', 'duration-sec']) {
+    $(id).addEventListener('input', () => { $('route-distance').textContent = $('distance-km').value || '—'; updateCompliance(); });
+  }
+  document.querySelectorAll('input[name="run-mode"]').forEach((input) => input.addEventListener('change', () => {
+    updateMode();
+    // 必须同时重算合规与按钮：窗口外切到预约后，提交按钮要立刻恢复可用，
+    // 不能等用户下次改距离/时长才刷新（否则看起来就是「还是点不动」）。
+    updateCompliance();
+    announce(input.value === 'scheduled' ? '已切换为预约提交（时间按北京时间）。' : '已切换为立即提交。', 'run-message');
+  }));
+  document.querySelectorAll('input[name="route-mode"]').forEach((input) => input.addEventListener('change', () => {
+    updateMode();
+    updateCompliance();
+    announce(input.value === 'free'
+      ? '已切换为自由跑：计入平台记录，但不计学期成绩。'
+      : '已切换为操场路线。', 'run-message');
+  }));
+  $('schedule-datetime').addEventListener('input', () => $('schedule-datetime').removeAttribute('aria-invalid'));
+
+  // ---------- 提交（两步确认）----------
+  $('run-form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (busy) return;
+    if (infoDialog.open || resetDialog.open) return;
+    const c = compliance();
+    if (!c.ok) { announce(c.text, 'run-message', true); return; }
+    const dk = Number($('distance-km').value);
+    const ds = Number($('duration-sec').value);
+    const free = isFree();
+    const mode = free ? 'now' : runMode();
+    const runType = free ? 'FREE' : 'CAMPUS';
+    let plannedAt = null, plannedLabel = free ? '自由跑 · 立即提交' : '立即提交';
+    if (mode === 'scheduled') {
+      plannedAt = parseLocalInput($('schedule-datetime').value);
+      if (plannedAt === null) { $('schedule-datetime').setAttribute('aria-invalid', 'true'); announce('请填写有效的预约时间。', 'run-message', true); $('schedule-datetime').focus(); return; }
+      if (plannedAt <= Date.now()) { $('schedule-datetime').setAttribute('aria-invalid', 'true'); announce('预约时间必须晚于当前时间。', 'run-message', true); $('schedule-datetime').focus(); return; }
+      plannedLabel = fmtShort(plannedAt) + '（北京时间）';
+    }
+    busy = true;
+    $('run-submit').disabled = true;
+    const cf = await apiPost('/confirm', { distanceKm: dk, durationSec: ds, runType, plannedAt: mode === 'scheduled' ? plannedAt : undefined });
+    busy = false;
+    if (!(cf.body && cf.body.ok)) {
+      announce('无法取得确认令牌：' + ((cf.body && cf.body.error) || ('HTTP ' + cf.status)), 'run-message', true);
+      updateCompliance();
+      return;
+    }
+    const token = cf.body.confirmToken;
+    const isSched = mode === 'scheduled';
+    openInfo({
+      returnTo: $('run-submit'),
+      title: free ? '确认提交这次自由跑？' : (isSched ? '确认预约这次跑步？' : '确认提交这次跑步？'),
+      description: `${free ? '自由跑' : '操场路线'} · ${dk} km · ${ds} 秒 · 配速 ${paceStr(ds / dk)}/km · ${plannedLabel}`,
+      caption: free
+        ? '自由跑会写入平台记录并生成轨迹，但平台不计入学期有效成绩，也不受开跑窗口限制（窗口时间以平台返回为准）。'
+        : (isSched
+          ? '确认后即完成授权，到点由本机服务器自动提交，不再询问。'
+          : (rules && rules.runAvailableNow !== true
+            ? '现在不在开跑窗口，确认后会自动排到下一个开跑时间（含 1~3 分钟随机抖动），到点自动提交，不必守着页面。'
+            : '确认后将立即向校园平台提交一次真实的跑步记录，无法撤回。')),
+      confirmLabel: free ? '确认提交自由跑' : (isSched ? '确认预约' : '确认提交'),
+      onConfirm: async () => {
+        busy = true;
+        $('run-submit').disabled = true;
+        const path = isSched ? '/schedule' : '/run';
+        const payload = isSched
+          ? { distanceKm: dk, durationSec: ds, plannedAt, runType, confirmToken: token }
+          : { distanceKm: dk, durationSec: ds, runType, confirmToken: token };
+        announce(isSched ? '正在创建预约…' : '正在提交到平台…', 'run-message');
+        const r = await apiPost(path, payload);
+        busy = false;
+        if (r.body && r.body.ok && r.body.scheduled) {
+          // 窗口外后端自动落窗，返回 scheduled 而不是提交结果
+          const when = fmtClockShort(r.body.plannedAt) + '（北京时间）';
+          announce(`不在开跑窗口，已自动排到 ${when}。到点由本机服务器自动提交，不必守着页面。`, 'run-message');
+        } else if (r.body && r.body.ok) {
+          const ref = r.body.sessionId != null ? `sessionId ${r.body.sessionId}` : `记录 id ${r.body.platformId}`;
+          if (r.body.started) {
+            // 校园跑现在是真实计时：先把话讲清楚，否则用户以为"点完就该看到记录"
+            const jitterNote = r.body.jittered ? '（申报值已小幅浮动）' : '';
+            announce(`会话已建立：${ref}（${r.body.distanceKm} km / ${r.body.durationSec} s）${jitterNote}。`
+              + `${r.body.waitSec} 秒后自动提交，期间可以关掉页面，保持本机进程运行即可。`, 'run-message');
+          } else {
+            announce(isSched
+              ? `预约已创建：${r.body.job && r.body.job.id}，到点自动执行。`
+              : `提交成功：${ref}（${r.body.distanceKm} km / ${r.body.durationSec} s）${free ? '· 自由跑不计学期成绩' : ''}`, 'run-message');
+          }
+        } else {
+          const detail = r.body && (r.body.problems ? r.body.problems.join('；') : r.body.error);
+          announce((isSched ? '预约失败：' : '提交失败：') + (detail || ('HTTP ' + r.status)), 'run-message', true);
+        }
+        await refreshAll(true);
+      },
+    });
+  });
+
+  $('queue-list').addEventListener('click', async (event) => {
+    const btn = event.target.closest('[data-action="cancel-task"]');
+    if (!btn || busy) return;
+    const id = btn.dataset.taskId;
+    openInfo({
+      returnTo: btn,
+      title: '取消这个预约？',
+      description: `预约 ${id} 将被取消，不会再自动提交。`,
+      confirmLabel: '确认取消',
+      onConfirm: async () => {
+        const r = await apiPost('/schedule/cancel', { id });
+        announce(r.body && r.body.ok ? '预约已取消。' : '取消失败：' + ((r.body && r.body.error) || ('HTTP ' + r.status)), 'run-message', !(r.body && r.body.ok));
+        await refreshAll(true);
+      },
+    });
+  });
+
+  // ---------- 干跑预览 ----------
+  function drawTrack(points) {
+    const line = $('track-line'), dot = $('track-start');
+    if (!Array.isArray(points) || points.length < 2) {
+      line.setAttribute('points', ''); dot.setAttribute('cx', ''); dot.setAttribute('cy', ''); return;
+    }
+    const lats = points.map((p) => p.latitude), lngs = points.map((p) => p.longitude);
+    const minLa = Math.min(...lats), maxLa = Math.max(...lats);
+    const minLo = Math.min(...lngs), maxLo = Math.max(...lngs);
+    const spanLa = (maxLa - minLa) || 1e-9, spanLo = (maxLo - minLo) || 1e-9;
+    const span = Math.max(spanLa, spanLo);
+    const pad = 6;
+    const scale = (100 - pad * 2) / span;
+    const ox = pad + (span - spanLo) * scale / 2, oy = pad + (span - spanLa) * scale / 2;
+    // 纬度高 → 图上更靠上，故 y 取反
+    const xy = (p) => [
+      (ox + (p.longitude - minLo) * scale).toFixed(2),
+      (oy + (maxLa - p.latitude) * scale).toFixed(2),
+    ];
+    line.setAttribute('points', points.map((p) => xy(p).join(',')).join(' '));
+    const [sx, sy] = xy(points[0]);
+    dot.setAttribute('cx', sx); dot.setAttribute('cy', sy);
+    // 打卡点与轨迹共用同一套投影，否则圆点会飘到图外；每次重绘先清旧点
+    const svg = $('track-svg');
+    svg.querySelectorAll('.cp-mark').forEach((n) => n.remove());
+    for (const h of (previewCheckpoints || [])) {
+      if (!Number.isFinite(h.latitude) || !Number.isFinite(h.longitude)) continue;
+      const [cx, cy] = xy({ latitude: h.latitude, longitude: h.longitude });
+      const el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      el.setAttribute('cx', cx); el.setAttribute('cy', cy); el.setAttribute('r', '1.5');
+      el.setAttribute('class', 'cp-mark');
+      el.setAttribute('fill', h.hit ? '#267565' : '#c0392b');
+      el.setAttribute('fill-opacity', '0.85');
+      el.setAttribute('data-name', h.name || '');
+      svg.appendChild(el);
+    }
+  }
+  // 本次预览的打卡点（含坐标与命中结果），由 /preview 返回
+  let previewCheckpoints = [];
+  // ---------- 一键取码 ----------
+  // 后端 /bind/scan 是 NDJSON 流：progress 行更新文案，done 行直接拿绑定码填进输入框并绑定。
+  // 不给自动绑定留悬念：填进去之后仍走用户点的「连接身份」，失败原因也由现有 /bind 文案负责。
+  $('bind-scan').addEventListener('click', async () => {
+    const btn = $('bind-scan');
+    const prog = $('scan-progress');
+    btn.disabled = true;
+    prog.hidden = false;
+    prog.textContent = '正在准备…';
+    try {
+      const resp = await fetch('/bind/scan', { method: 'POST' });
+      if (!resp.ok || !resp.body) throw new Error('HTTP ' + resp.status);
+      const reader = resp.body.getReader();
+      const dec = new TextDecoder();
+      let buf = '', final = null;
+      for (;;) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buf += dec.decode(value, { stream: true });
+        let nl;
+        while ((nl = buf.indexOf('\n')) >= 0) {
+          const line = buf.slice(0, nl).trim();
+          buf = buf.slice(nl + 1);
+          if (!line) continue;
+          let msg = null;
+          try { msg = JSON.parse(line); } catch { continue; }
+          if (msg.type === 'progress' || msg.type === 'start') prog.textContent = msg.message || '';
+          else if (msg.type === 'done') final = msg;
+          else if (msg.type === 'error') {
+            prog.textContent = msg.message;
+            if (msg.detail) console.warn('[bind/scan]', msg.detail);
+            return;
+          }
+        }
+      }
+      if (final && final.bindCode) {
+        $('bind-code').value = final.bindCode;
+        prog.textContent = '已读取到绑定码，正在连接…';
+        $('bind-form').requestSubmit();
+      } else {
+        prog.textContent = '没读到绑定码，请按页面提示检查后再试，或直接用命令行取码。';
+      }
+    } catch (e) {
+      prog.textContent = '读取失败：' + (e && e.message || e);
+    } finally {
+      btn.disabled = false;
+    }
+  });
+
+  // ---------- 诊断面板 ----------
+  // 默认只跑本地诊断（不触网）；勾选探活才发三个 GET。
+  async function runDiagnose(probe) {
+    const out = $('diag-out');
+    out.hidden = false;
+    out.textContent = '正在诊断…';
+    const r = await apiGet('/diagnose' + (probe ? '?probe=1' : ''));
+    if (!r.body) { out.textContent = '诊断请求失败：HTTP ' + r.status; return; }
+    out.textContent = JSON.stringify(r.body, null, 2);
+  }
+  $('diag-run').addEventListener('click', () => runDiagnose(false));
+  $('diag-probe').addEventListener('click', () => runDiagnose(true));
+
+  $('run-preview').addEventListener('click', async () => {
+    if (busy) return;
+    const c = compliance();
+    const dk = Number($('distance-km').value), ds = Number($('duration-sec').value);
+    if (!Number.isFinite(dk) || dk <= 0 || !Number.isFinite(ds) || ds <= 0) { announce('请先填写有效的距离与时长。', 'console-message', true); return; }
+    busy = true; $('run-preview').disabled = true;
+    announce('正在生成干跑预览…', 'console-message');
+    const r = await apiPost('/preview', { distanceKm: dk, durationSec: ds, runType: isFree() ? 'FREE' : 'CAMPUS' });
+    busy = false; $('run-preview').disabled = false;
+    if (!(r.body && r.body.ok)) {
+      announce('预览失败：' + ((r.body && r.body.error) || ('HTTP ' + r.status)), 'console-message', true);
+      return;
+    }
+    previewData = r.body;
+    // 自由跑的 plan 是单发形状 {path, body}，没有 body_finish；只认 body_finish 会让预览空白
+    const planBody = (r.body.plan && (r.body.plan.body_finish || r.body.plan.body)) || {};
+    const pts = planBody.routeData || [];
+    $('preview-points').textContent = String(r.body.trackPoints);
+    $('preview-ring').textContent = String(r.body.ringMeters);
+    $('preview-distance').textContent = `${r.body.declaredM} / ${r.body.walkedM} m`;
+    $('preview-residual').textContent = `${r.body.residualPct} %`;
+    const g = r.body.guard || {};
+    const cpOk = r.body.checkpointHits ? (r.body.checkpointHits.ok ? '打卡点全命中' : '打卡点有遗漏') : '';
+    $('track-caption').textContent = `轨迹点 ${r.body.trackPoints} 个 · 环长 ${r.body.ringMeters} m · 实走偏差 ${r.body.residualPct}% · 平均速度 ${r.body.avgSpeed} m/s`
+      + ` · 最小点距 ${g.minStepM != null ? g.minStepM : '—'} m · 峰速 ${g.peakSpeed != null ? g.peakSpeed : '—'} m/s · ${cpOk}`;
+    previewCheckpoints = (r.body.checkpointHits && r.body.checkpointHits.hits) || [];
+    drawTrack(pts);
+    // 干跑就把"会不会漏打卡点"摆出来，别等提交后才知道被判无效
+    const cp = r.body.checkpointHits;
+    if (cp && cp.ok === false) {
+      noteDryProblems((r.body.problems || []).concat([cp.reason]), r.body.rulesDegraded);
+    }
+    $('preview-track').hidden = false;
+    $('toggle-raw').hidden = false;
+    $('preview-raw').textContent = JSON.stringify(r.body.plan, null, 2);
+    noteDryProblems(r.body.problems, r.body.rulesDegraded);
+  });
+  // dry 的 problems 会包含「不在开跑窗口」——那是干跑的正常特征，不是错误，要区分措辞
+  function noteDryProblems(problems, degraded) {
+    const list = problems || [];
+    const windowOnly = list.length === 1 && /不在开跑窗口/.test(list[0]);
+    let msg = '干跑已生成，未发送任何提交请求。';
+    if (degraded) msg += '（平台规则未取到，本次预览使用了兜底常量）';
+    if (list.length && !windowOnly) msg += ' 提示：' + list.join('；');
+    else if (windowOnly) msg += ' 当前不在开跑窗口，正式提交会被平台拒绝。';
+    announce(msg, 'console-message', false);
+  }
+  $('toggle-raw').addEventListener('click', () => {
+    const raw = $('preview-raw');
+    raw.hidden = !raw.hidden;
+    $('toggle-raw').textContent = raw.hidden ? '查看请求体' : '收起请求体';
+  });
+
+  // ---------- 账号 ----------
+  // 距离/时长微调按钮。事件委托一次，之后新增按钮无需再绑。
+  document.querySelectorAll('[data-step]').forEach((btn) => btn.addEventListener('click', () => {
+    const input = $(btn.dataset.step);
+    if (!input) return;
+    const delta = Number(btn.dataset.delta);
+    const min = Number(input.min) || 0.01;
+    const cur = Number(input.value);
+    let next = (Number.isFinite(cur) ? cur : 0) + delta;
+    if (input.id === 'distance-km') next = +next.toFixed(2);
+    else next = Math.round(next);
+    input.value = String(Math.max(min, next));
+    updateCompliance();
+  }));
+  $('refresh-dashboard').addEventListener('click', () => refreshAll(false));
+  $('refresh-records').addEventListener('click', () => refreshAll(false));
+  $('switch-account').addEventListener('click', () => {
+    const list = (appState && appState.accounts) || [];
+    if (list.length === 0) { announce('尚未连接任何账号。', 'run-message', true); return; }
+    const others = list.filter((a) => a.studentId !== appState.active);
+    if (!others.length) {
+      openInfo({
+        title: '只有一个账号',
+        description: '当前只连接了一个身份。要添加新身份，请用「取码工具」重新生成一个绑定码，然后在连接页粘贴。',
+        caption: '连接新账号不会删除原账号的记录。',
+      });
+      return;
+    }
+    const next = others[0];
+    openReset({
+      title: `切换到 ${next.name || next.studentId} ？`,
+      description: `当前账号：${appState.user && appState.user.name || appState.active}。将切换到 ${next.name || next.studentId}（${next.schoolName || ''}），两者的记录独立保存。`,
+      cancelLabel: '保留当前账号',
+      confirmLabel: '确认切换',
+      onConfirm: async () => {
+        const r = await apiPost('/accounts', { studentId: next.studentId });
+        announce(r.body && r.body.ok ? `已切换到 ${next.name || next.studentId}。` : '切换失败：' + ((r.body && r.body.error) || ('HTTP ' + r.status)), 'run-message', !(r.body && r.body.ok));
+        await refreshAll(true);
+        ensureRoutes().catch(() => {});
+      },
+    });
+  });
+  $('header-user').addEventListener('click', () => {
+    $('account-details').open = true;
+    $('account-title').tabIndex = -1;
+    $('account-title').focus();
+    announce('已展开账号资料。');
+  });
+  document.querySelector('.brand').addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+    announce('已返回页面顶部。');
+  });
+  for (const details of document.querySelectorAll('details')) {
+    details.addEventListener('toggle', () => { if (details === $('console-details')) announce(details.open ? '干跑预览已展开。' : '干跑预览已收起。'); });
+  }
+
+  // ---------- 说明与工具 ----------
+  const INFO = {
+    'local-server': {
+      title: '本机运行',
+      description: '本页由 node server.js 提供，默认只监听 127.0.0.1:8787。服务器持有绑定码凭据并直连校园平台；页面本身不接触 token。',
+      caption: '需要局域网访问时可用 HOST 环境变量放开，但那会让同网段设备也能读到这个服务。',
+    },
+    'platform-rules': {
+      title: '平台开跑规则',
+      description: '距离下限、时长区间、配速区间与开跑窗口全部由平台的 /run-rules/current 实时返回，本页不写死任何阈值；窗口以平台返回为准，可能随时段或星期变化。',
+      caption: '窗口外提交会被平台拒绝；预约到点若不在窗口，会记为失败并保留平台原文。',
+    },
+    'semester-progress': {
+      title: '学期标准怎么算？',
+      description: '进度、标准与总里程全部取自平台 /stats 接口（standards[].currentValue / standardValue / semesterStats）。本条只展示平台返回的数字，不参与任何提交判断。',
+      caption: '取不到平台统计时显示「—」并给出原因，不会改成本机提交条数冒充有效成绩。自由跑不计入有效次数。',
+    },
+  };
+  document.querySelectorAll('[data-info]').forEach((button) => button.addEventListener('click', () => {
+    const info = INFO[button.dataset.info];
+    if (info) openInfo(info);
+  }));
+
+
+  // ---------- 启动 ----------
+  $('dashboard-clock').textContent = fmtClock(Date.now());
+  setInterval(() => { $('dashboard-clock').textContent = fmtClock(Date.now()); paintLive(); }, 1000);
+
+  globalThis.KD_APP = Object.freeze({
+    refresh: () => refreshAll(true),
+    snapshot: () => JSON.parse(JSON.stringify({ appState, rules, rulesError, preview: previewData })),
+    compliance,
+  });
+
+  // 局域网地址：代替原来那张「手机卡」。只读展示，不再是页面上的操作项。
+  // 版本提示：服务端只有在 package.json 配了 upstream 时才会去查，否则 latestVersion 恒为 null。
+  // 只提示、不自动更新 —— 自动更新等于在用户机器上执行下载的二进制。
+  apiGet('/state').then((r) => {
+    const b = r.body || {};
+    if (!b.latestVersion || !b.version || b.latestVersion === b.version) return;
+    const el = $('storage-notice');
+    if (!el) return;
+    const [a1, a2, a3] = String(b.version).split('.').map(Number);
+    const [c1, c2, c3] = String(b.latestVersion).split('.').map(Number);
+    const newer = (c1 > a1) || (c1 === a1 && c2 > a2) || (c1 === a1 && c2 === a2 && c3 > a3);
+    if (newer) el.textContent = '有新版本 v' + b.latestVersion + '（当前 v' + b.version + '），到仓库 Releases 下载';
+  }).catch(() => {});
+
+  apiGet('/lan').then((r) => {
+    const el = $('lan-notice');
+    if (!el || !(r.body && r.body.ok)) return;
+    const first = (r.body.lan || [])[0];
+    if (first) el.textContent = '手机访问：' + first.url;
+  }).catch(() => {});
+  refreshAll(true).then(() => {
+    // 已有绑定（重启页面/服务）时同样自动补一次路线；已缓存则不触发定位
+    if (appState && appState.user) ensureRoutes().catch(() => {});
+    // 后台会变化的两件事：预约到点、会话到点提交。有进行中的会话时 5s 一刷（用户正盯着进度条），
+    // 否则 20s。两者都只在页面可见且无对话框时执行。
+    let tick = 0;
+    setInterval(() => {
+      tick++;
+      const fast = activeSession && !document.hidden;
+      if (!fast && tick % 4 !== 0) return;
+      if (document.hidden || infoDialog.open || resetDialog.open || busy) return;
+      refreshAll(true).catch(() => {});
+    }, 5000);
+  });
+})();
+</script>
+</body>
+</html>

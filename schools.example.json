@@ -1,0 +1,7 @@
+{
+  "note": "多校绑定码登记表（可选）。code 是 tools/取绑定码.js 输出的 Base64 串，一个学生一条。复制本文件为 schools.json 后再填；schools.json 不会入库。",
+  "schools": [
+    { "name": "示例学校A", "code": "" },
+    { "name": "示例学校B", "code": "" }
+  ]
+}

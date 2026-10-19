@@ -1,0 +1,21 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "headless": true
+    },
+    "contextOptions": {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "timezoneId": "Asia/Shanghai",
+      "locale": "zh-CN",
+      "acceptDownloads": false
+    }
+  },
+  "outputDir": ".",
+  "allowUnrestrictedFileAccess": true,
+  "_note": "浏览器可执行文件路径由 run-qa.ps1 自动探测后用参数传入，不在此写死；outputDir 相对本目录。"
+}

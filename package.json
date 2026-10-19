@@ -1,0 +1,17 @@
+{
+  "name": "auto-run-checkin",
+  "version": "1.1.0",
+  "private": true,
+  "description": "本地运行的校园跑自助工具：取绑定码、生成合规轨迹、按平台规则自动排期",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tools/verify_card_format.js && node tools/verify_track.js && node tools/verify_guard.js && node tools/verify_window.js && node tools/verify_e2e.js && node tools/verify_timing.js && node tools/verify_auto_config.js && node tools/verify_coldstart.js && node tools/check-secrets.js",
+    "test:qa": "node tools/qa/qa-scenarios.js && node tools/qa/qa-visual.js",
+    "verify:realism": "node tools/verify_realism.js --gen 1.2/600 && node tools/verify_realism.js --gen 2/480 && node tools/verify_realism.js --gen 1/600",
+    "verify:schools": "node tools/校验多校.js"
+  }
+}

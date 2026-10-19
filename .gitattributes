@@ -1,0 +1,8 @@
+# Windows 批处理必须是 CRLF，否则 cmd.exe 解析出错
+*.cmd text eol=crlf
+# PowerShell 脚本带 BOM 时也必须 CRLF
+*.ps1 text eol=crlf
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.html text eol=lf
